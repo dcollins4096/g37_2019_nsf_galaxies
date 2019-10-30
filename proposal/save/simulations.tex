@@ -1,0 +1,364 @@
+\subsection{Simulating the Magnetized Universe}
+\label{sec:simulations}
+\vspace{-1mm}
+
+\subsubsection{Cosmological simulations}
+\label{sec:cosmo_sims}
+\vspace{-2mm}
+
+As described in Section~\ref{sec:motivation}, there is a great deal of
+observational evidence that magnetic fields exist in galaxies over a
+wide variety of masses and redshifts, and also in intergalactic space.
+Furthermore, it appears that the magnetic fields in star-forming
+galaxies build up relatively quickly, based on observations of $z
+\simeq 2-3$ galaxies which show that the magnetic fields measured in
+their interstellar medium (ISM) are roughly in equipartition with
+other sources of ISM energy.  We will explore the evolution of
+magnetic fields in the universe, both over time and in a wide range of
+environments, by using a carefully-chosen series of cosmological
+simulations.  At present, a collaboration of galaxy modelers
+(led by PI O'Shea) is in the midst of running two sets of
+large-volume cosmological simulations using the \enzo\ code -- one of
+a 25 Mpc volume, and the other 75 Mpc, both with $1024^3$ root grid
+cells and particles, and with multiple sets of physics in each set of
+calculations and moderate physical resolution ($\Delta x \simeq 400$~pc).  Taken together, these sets of calculations resolve the
+formation of galaxies over three orders of magnitude in mass, from
+$\simeq 10^{10}$ to $10^{13}$~M$_\odot$, which encompasses galaxies
+ranging in size from the Small Magellenic Cloud through the largest
+ellipticals.  These simulations will be completed by the time that the
+grant period for this project begins, and we will mine these datasets
+to find approximately a dozen galaxies whose masses, morphologies, and
+formation histories probe the regimes of interest for understanding
+magnetic field behavior, and which we will resimulate at high resolution.  We will include
+the following galaxies in our list of follow-up simulations,
+which will enable us to target essentially the entire range of
+observations listed in Sections~\ref{sec:extragalactic}
+and~\ref{sec:lowz}:
+
+\begin{enumerate}
+
+\item Four spiral galaxies of roughly Milky Way mass (M$_{gal} \simeq 1-2 \times
+10^{12}$~M$_\odot$) that have a range of formation histories,
+including galaxies that have rapid early merger rates as well as those
+with smoother formation histories.  In particular, we will include at least one galaxy
+with a history similar to the Milky Way, with no major
+mergers after $z \sim 2$.  These will be compared to observations of
+local spiral galaxies \cite[e.g.,][]{2014arXiv1411.1386V} and to the
+magnetic fields in the ISM of our own Milky Way.
+
+\item At least two galaxies that grow rapidly at early times and are
+large enough in terms of stellar mass that they can be directly compared to observations of magnetic fields
+in galaxies at $z \simeq 2-3$
+\cite[e.g.,][]{2008Natur.454..302B,2008ApJ...676...70K,1998A&A...329..809A}.
+
+\item Four dwarf galaxies of masses $\simeq 10^{10}$ and $10^{11}$
+M$_\odot$ at $z=0$, with one galaxy of each mass experiencing star formation
+at the present epoch and one that is relatively quiescent.  These will be compared with
+observations of local dwarf galaxies
+\cite{2000A&A...355..128C,2011A&A...529A..94C,2012MNRAS.423L.127R,Mao12,2013MNRAS.435..149N,2014A&A...567A.134J}.
+
+\item Two galaxies that are massive ellipticals (having essentially no
+star formation) at $z=0$, which will be compared to local ellipticals
+\cite{1993A&ARv...4..449W,1996MNRAS.279..229M}.
+
+\end{enumerate}
+
+Once these galaxies are selected from the pilot calculations, we will re-generate the initial
+conditions for these galaxies at much higher mass and spatial
+resolution using the MUSIC cosmological IC
+code~\cite{2011MNRAS.415.2101H}, and then re-run the calculations to
+the redshift of interest (typically the present day) at very high
+spatial resolution ($\Delta x_{min} \simeq 100$~pc) using
+prescriptions for metal-dependent radiative cooling, star formation
+and feedback, and AGN feedback.  This is the state of the art for
+physics-rich cosmological galaxy formation simulations, and results in
+galaxies with reasonable $z=0$ properties
+\cite[e.g.,][]{2012MNRAS.423.1726S,2014MNRAS.444.1518V,2014MNRAS.445..581H}.
+In addition, we will include the equations of ideal
+magnetohydrodyamics using a cosmologically-motivated seed field
+initialized to $B
+\simeq 10^{-15}$~G at $z \simeq 100$ when the simulations begin.
+
+One of the virtues of this type of cosmological simulation is that
+they are relatively inexpensive (see Section~\ref{sec:comptime_sims}),
+which allows us to experiment with variations in physical models to
+understand the effect that model choice may have on our results.  Specifically,
+the three magnetic field injection scenarios described the introduction to this
+section.  
+
+In addition to probing the questions posed \red{in the objectives}, we will
+extract the galaxies at an appropriate point in their evolution and re-simulate,
+as describe in Section \ref{sec:molcloud_sims}.  This will allow us to have the
+most realistic initial and boundary conditions possible for the isolated
+simulations.
+%measure the strength and morphology of the evolved Milky-Way galaxies to
+%ompare to those of the isolated galaxies, which will begin with idealized
+%onditions () but, having substantially higher resolution, evolve in a more
+%ealistic fashion.  
+
+%As time and resources permit, we will 
+%For some
+%subset of these galaxies, in addition to our standard calculation we
+%will try varying the strength and configuration of the initial seed field (which is unlikely to make a
+%difference in larger halos~\cite[e.g.,][]{Xu10,Xu11}, though it is
+%unclear if this is true in smaller halos), will experiment with
+%magnetic field generation using the Biermann Battery
+%\cite[e.g.,][]{Xu08,2014arXiv1408.4161G}, and explore multiple
+%models for magnetic field injection from stellar populations and from
+%AGN (in particular, varying the total energy and configuration of the
+%magnetic fields injected).
+
+%The cosmological simulations alone will allow us to answer several
+%questions: How do magnetic fields develop in galaxies as a function of
+%cosmic time, mass, formation history, and morphology?  Does the
+%initial seed field's strength or configuration ultimately make a
+%difference in the properties of observable magnetic fields in
+%galaxies?  How are star formation rate and magnetic field properties related over
+%cosmic time?
+%And, finally, how (and to what distance) are magnetic
+%fields communicated into the intergalactic medium, and can the
+%inferred intergalactic magnetic fields
+%\cite[e.g.,][]{1999ApJ...511...56K,2010Sci...328...73N} come from
+%galaxies alone?  With this latter question, and assuming that most
+%magnetic fields in the intergalactic medium come from galactic winds,
+%we can potentially draw connections between metal absorbers in the
+%intergalactic and circumgalactic medium with magnetic fields --
+%connections that can be probed by the Jansky VLA, ALMA, and future
+%long-wavelength telescopes such as the Square Kilometer Array.  Observational
+%diagnostics will be discussed further in Section \ref{sec:observational_comps}
+
+
+\vspace{-3mm}
+\subsubsection{Galactic Simulations}
+\label{sec:molcloud_sims}
+\vspace{-2mm}
+
+While the cosmological simulations will be able to directly address a
+range of observationally-motivated questions about magnetic fields in
+galaxies, their relatively limited ($\Delta x \simeq 100$~pc) spatial  resolution means that they only
+ marginally resolve larger molecular clouds, and are far too
+coarsely resolved to directly simulate star formation.  To this end,
+we will use our cosmological galaxy simulation data as initial
+conditions for idealized calculations of isolated disk, elliptical, and
+dwarf galaxies.  
+For these calculations, we will extract the target galaxies from Section
+\ref{sec:cosmo_sims} and embed them in isolated, non-cosmological boxes.  This will allow us to
+increase the resolution to $\simeq 1$ pc and follow both molecular cloud
+formation as well as more carefully follow star formation and feedback
+processes, albeit over substantially less than a Hubble time.
+Fortunately, it has been observed that Milky-way sized galaxies have comparable
+magnetic field strengths by $z\sim 0.5$, which indicates that the growth time
+for such fields is quite short, so we will only need to simulate each galaxy for
+a few $Gyr$.  
+
+
+With these simulations, we will
+explore the relationship between large-scale galactic magnetization
+and the properties of individual molecular clouds over a wider cloud
+mass scale.
+In addition, these
+isolated calculations will allow us to explore in greater detail the
+effects that varied energy and magnetic field injection mechanisms from stellar
+populations (from stellar winds and Type Ia and Type II supernovae) and
+from AGN have on magnetic field generation, and also on the possible
+effect that resolution might have on dynamo amplification of magnetic
+fields in both spiral and elliptical galaxies \cite[an effect that was shown to
+be important in high-redshift halos;
+][]{2010ApJ...721L.134S,2013AN....334..531S}.
+
+In these simulations we will focus resolution on the cold molecular gas
+and follow the injection of kinetic energy from supernovae, and the subsequent
+dynamo. This will be done for one of each of the four categories of galaxies:
+one spiral, one high $z$ galaxy, one dwarf, and one massive elliptical.  The
+massive elliptical, having no star formation or molecular content, may be
+omitted based on the magnetic activity seen in the cosmological phase. 
+Each of these will be treated with three
+magnetic feedback routines: the
+plain \emph{dynamo-only} evolution, evolving with the field given by the
+cosmological simulation; and the two toroidal feedback methods.  The thermal
+feedback from supernovae
+and thermodynamics will target the formation of molecular clouds.  This
+chemistry is already contained in the chemistry solver in \enzo\
+\cite[see, e.g.,][]{Tasker11,2014ApJ...783...75M}.  \red{An excellent body of
+literature exists on this, which we will keep in contact with}
+
+%These simulations will allow us to refine the star formation and feedback
+%algorithms by more finely resolving the sampled IMF and more finely resolving
+%the turbulence and dynamo action. They will also allow us to explore the
+%creation and destruction of molecular clouds in a magnetized environment, which
+%has had little study to date \citep{Dobbs08, Kim15}, and the connection between the
+%magnetic field of individual clouds to the galaxy itself.  The
+%simulations described here will likely require a more detailed
+%treatment of H$_2$ formation -- including dust grain formation,
+%photoelectric heating, the effect of non-trivial optical depths on
+%cooling rates, and others -- which are already contained in the \enzo\
+%chemistry solver \cite[see, e.g.,][]{Tasker11,2014ApJ...783...75M}.
+%In roughly half of the simulations we will inject magnetic fields from
+%supernovae explosions, by adding it in a divergence-free manner as was done in
+%\citet{Li06b, Nakamura06, Xu08c}, modeling the injection of magnetic energy into
+%the ISM by supernovae.  This  will be compared to
+%simulations that have no injection and only allow the small- and large-scale
+%dynamos to operate, as in \citep{Beck12}.  
+
+
+
+\davedeletenew{
+\vspace{-3mm}
+\subsubsection{Connecting Star Formation Theory and Galaxy Formation}
+\label{sec:connections}
+\vspace{-2mm}
+}
+
+%\vspace{2mm}
+%\noindent\textbf{Connecting Star Formation Theory and Cosmology} 
+%\vspace{2mm}
+
+\davedeletenew{
+\noindent Simulations of galaxy formation and star formation in a cosmological context
+rely, by necessity, on ad-hoc prescriptions for star formation.  For instance,
+the oft-used method of \citet{Cen93} requires that material is above a certain
+threshold and has negative velocity divergence (i.e., converging gas
+flow), then turns a fraction of gas in a resolution element
+into stars.  This type of algorithm has a number of free parameters that are
+typically normalized by their ability to reproduce observed star formation
+properties of star forming galaxies.   Meanwhile, a substantial amount
+of work has gone into understanding the rate and mass fraction of star formation
+at the molecular cloud (MC) level.  In the proposed work, we will bridge the gap
+between the local and cosmologial models by developing a new star formation algorithm that
+incorporates developments in molecular cloud dynamics.  Ad-hoc star formation algorithms have done reasonably well  in
+reproducing observable quantities such as the redshift evolution of stellar mass in galaxies.  However, the tight, linear
+correlation between total gas mass and star formation rate, even at high
+redshift, implies that the details of the giant molecular clouds are essential in determining star
+formation rates \citep{Genzel10,Shapley11, Lada12, Lada14}.  \textbf{We will
+develop a new star formation algorithm for use in cosmological simulations that
+takes advantage of molecular cloud physics.}  This development will happen in
+conjunction with both molecular cloud and cosmological simulations.
+%%%paragraph
+Predictions of the mass distribution and rate of star formation can be made
+based on the statistics of the turbulence at the molecular cloud level.  We will
+follow the pioneering work of \citep{Padoan02, Krumholz05} and the later
+extensions by \citep{Hennebelle08c, Padoan11, Hennebelle11, Federrath12} to
+formulate a new star formation procedure that incorporates the magnetic field of
+the galaxy and molecular cloud properties.
+%%%paragraph
+One of the most fortuitous events in the study of supersonic turbulence is the
+fact that the density probability distribution function (PDF) tends to form a
+lognormal.  This has been exploited by several star formation models, and we
+will do the same in this project.  The width of the PDF is related in turn to the Mach
+number $\mach=v_{\rm{rms}}/c_{\rm{s}}$: higher \mach\ yields higher compression, thus
+wider PDFs.  Using the standard turbulent and magnetic scaling laws, one can
+formulate an analytic expression based solely on the mean Mach number, magnetic
+field strength, and cloud mass.  Several variations of this have been
+done, and we
+will explore each in turn.  A similar model  was recently developed  with the
+code Nyx \citep{Braun15}, wherein it was demonstrated that this technique is
+successful in reproducing observed star formation laws.  We will extend this
+work by additionally incorporating magnetic fields, in order to directly
+incorporate MHD effects into our cosmological simulations
+}
+
+
+\davedelete{
+Another fortuitous event is that the width of the
+density can be related to the Mach number.
+\begin{align}
+p(\rho) d\ln \rho &= \frac{1}{\sqrt{2 \pi \sigma^2}} e^{-(\ln\rho -
+\overline{\ln\rho})^2/(2 \sigma^2)} d \ln\rho \\
+\sigma^2 &= \ln(1 + b^2 \mach^2),
+\end{align}
+where $\rho$ is the density of gas in units of the mean, $\overline{\ln\rho}$ is
+the mean, $\sigma$ is the width of the PDF, and $b$ is a number of order unity.
+Experimentally, $b$ ranges from 1/3 for incompressible flow to 1 for fully
+compressible flow.  This PDF can in turn be used to predict a star formation
+rate by noting that above some threshold, $\rhoc$, a parcel of gas will have a
+Jeans mass smaller than the mass of the parcel, and will thus collapse to form
+stars.  The effective Jeans mass should incorporate not only the gas pressure,
+but also the magnetic pressure and turbulent pressure as well.  Several methods
+to incorporate these additional forces will be include in our model,
+and details
+can be found in \citep{Krumholz05, Padoan11, Hennebelle11, Federrath12}.  
+The final rate 
+\begin{align}
+\rm{SFR} &= \epsilon \int_{\rhoc}^\infty \rho V(\rho) d\rho \\
+& = \epsilon \left (1+\rm{erf}\left[\frac{\sigma^2 - 2 \ln \rhoc}{3} \right]
+\right),
+\end{align}
+where SFR is the star formation rate that will be used to determine the mass of
+stars in zones.  
+The work of \citet{Hennebelle11}  predicts the
+initial mass function (IMF) 
+from a fragmenting turbulent cloud based on an extension of the
+Press-Schechter model to include a lognormal density fluctuation, rather than a
+Gaussian, and is further extended to include a Jeans mass that depends on
+turbulence and the magnetic field.  This model predicts the IMF from only the properties of the local gas.  
+The
+difference between this model and other ad-hoc star formation models is that
+these parameters are drawn from the physical conditions in the cloud itself,
+rather than an adjustable parameter that is set in order to reproduce the
+Kennicut-Schmidt law.  
+In 
+our cosmological simulations, we will be restricted to a
+fine-resolution grid of $\simeq 100$ pc,
+which is larger than a typical star forming cloud.  Thus in order to model the
+typical $\mach$ number and mean magnetic field strength  in our gas, which are
+both necessary for the star formation recipe,  we must employ a subgrid scale
+model (SGS).  Here we will use a combination of the AMR SGS model
+\emph{Fearless}  \citep{Maier09}, which has been implemented in \enzo, and extend
+it to include the effects of MHD based on the formulation outlined in
+\citep{Chernyshov14}.  In this phase we will only worry about the subgrid
+production terms, treating them as a passive quantity as far as the evolution of
+the galaxy goes, and feeding them into our equation.
+We 
+will perform a suite of simulations examining the connection between star
+formation on the molecular cloud level and the impact of magnetic fields.  A
+significant distinction between the models for cutoff value is the treatment of
+magnetic fields.  The work of \citet{Krumholz05} ignores them, while
+\citet{Padoan11} treats the additional support of magnetic fields on equal
+footing with the turbulence.  Simulations comparing these models will be
+performed.
+}
+
+\vspace{-3mm}
+\subsubsection{Computing time}
+\label{sec:comptime_sims}
+\vspace{-2mm}
+
+Zoom-in cosmological simulations of a single Milky Way-type galaxy
+using \enzo, with $\simeq 400$~pc resolution, require approximately
+100,000 CPU-hours on TACC's Stampede resource
+\cite{2012ApJ...749..140H,2012ApJ...759..137J,2013MNRAS.430.1548H}, or
+slightly less on NCSA's Blue Waters.  The addition of MHD roughly
+doubles the computational cost, and increasing the particle mass
+resolution by a factor of 8 (to $5 \times 10^5$~M$_\odot$) will help
+to resolve early structure formation, but will increase the
+computational time by another factor of approximately four (rather
+than 8, due to judicious choices made during the creation of initial
+conditions, which will reduce the overall number of particles).
+Increasing spatial resolution will result in approximately a factor of
+two increase in cost.  Together, this suggests that a high resolution,
+physics-rich Milky Way-type simulation will cost roughly 1.6 million
+CPU-hours on Stampede or Blue Waters -- expensive, but not impossibly
+so.  Dwarf galaxy simulations and galaxies that stop at $z \simeq 2$
+will require substantially less time.  Isolated disk simulations will
+be comparably inexpensive -- at most 50,000 CPU-hours apiece on either
+Stampede or Blue Waters.  Taken together, we estimate that we will
+need 8-10 million CPU-hours per year on a machine like Stampede or
+Blue Waters for the cosmological and isolated disk calculations
+required for this proposal.
+
+Dr. O'Shea and Dr. Collins have had significant success in procuring
+computing time on XSEDE resources as PIs and Co-PIs of numerous large
+allocation -- they have over 25 million combined CPU-hours of XSEDE
+computing time over the past five years, most recently on XRAC
+allocations TG-AST090040 and AST140008.  In addition, Dr. O'Shea was
+the PI of a Blue Waters PRAC allocation that ended in March 2015
+consisting of 124 million CPU-hours, and Drs. O'Shea and Collins are
+co-PIs of a new Blue Waters allocation (starting in April 2015,
+continuing through March 2017) of roughly 100 million CPU-hours.  Both
+their XSEDE and Blue Waters allocations will be devoted in part to the
+project described in this proposal, and the level of resources
+obtained is more than adequate for the proposed science.
+
+% \subsubsection{Enzo-P -- maybe}
+
+% \red{do this only if we have time and feel like making this a CDS\& E proposal!}

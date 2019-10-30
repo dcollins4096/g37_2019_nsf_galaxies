@@ -1,0 +1,213 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage}
+\usepackage{subfigure}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{wrapfig}
+\usepackage{multirow}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+%\usepackage{psfig}
+\usepackage{rotating}
+
+%\setlength{\topmargin}{+0.1in}
+%\setlength{\oddsidemargin}{-0.125in}
+%\setlength{\evensidemargin}{-0.125in}
+\setlength{\textheight}{9.0in}
+\setlength{\textwidth}{6.5in}
+%\bibliographystyle{apj}
+\newcommand{\apj}{ApJ}
+\newcommand{\aj}{AJ}
+\newcommand{\apjl}{ApJL}
+\newcommand{\mnras}{MNRAS}
+\newcommand{\apjs}{ApJS}
+\newcommand{\pasp}{PASP}
+\newcommand{\araa}{ARA\&A}
+\newcommand{\aap}{A\&A}
+\newcommand{\aaps}{A\&AS}
+\newcommand{\pasj}{PASJ}
+\newcommand{\prd}{Phys. Rev. D}
+\newcommand{\nat}{Nature}
+\newcommand{\physrep}{Physics Reports}
+%\RequirePackage{natbib}
+\pagestyle{empty}
+
+\titleformat*{\section}{\large\bfseries}
+\hypersetup{urlcolor=blue}
+
+\begin{document}
+
+% NOTE: this document addresses
+% http://www.nsf.gov/pubs/policydocs/pappguide/nsf11001/gpg_2.jsp#dmp
+
+\vspace{-6mm}
+\begin{center} 
+\bfseries\uppercase{Section J -- data management plan}
+\end{center}
+
+\vspace{-3mm}
+\section{Products of the research}
+\vspace{-2mm}
+
+The research described in this proposal will result in several types
+of data.  The bulk of the data produced will be raw and processed
+simulation data (typically in time series), with the latter including
+individual fields extracted from the simulations, halo catalogs and
+merger trees, and a variety of analysis products including radial
+profiles of a variety of quantities of interest, images (including
+mock observational images), and mock galaxy spectra.  Additional types
+of data produced will include scientific software and a website
+describing the data products and software.  This data will be stored
+exclusively in digital formats.
+ 
+\vspace{-3mm}
+\section{Data Formats}
+\vspace{-2mm}
+
+For simplicity, we break the discussion of data format down by the
+data product:
+
+\vspace{2mm}
+\noindent \textbf{Raw simulation data} will be stored in large binary
+files using the HDF5 data format (\url{www.hdfgroup.org/HDF5}).  This
+is a commonly used scientific data format that has strong community
+support.  The structure of the simulation datasets can be somewhat
+complex, but is explained by in-file metadata and an accompanying text
+(soon to be binary HDF5) file that describes important information
+about the grid patches.  These data outputs can be read by a variety
+of publicly available, open source tools such as the YT data analysis
+tool (\url{http://yt-project.org}), as well as the widely used Paraview and
+VisIt visualization tools.  If necessary, the YT tool can be used as
+an intermediary to produce files that are more easily accessible to
+other researchers.
+
+\vspace{2mm}
+\noindent \textbf{Processed simulation data}, including most analysis
+products, will be stored in binary HDF5 files with easily
+understandable file structures.  Halo catalogs and merger trees will
+be stored in either HDF5 files or (for smaller catalogs/trees) in
+ASCII tables.  Images resulting from data processing will be stored in
+standard file formats such as jpeg, tiff, or png, and any mock
+observational data created (images and spectra) will be stored using
+the FITS file format.  All files, when appropriate, will have
+accompanying metadata (including in FITS by default, and in HDF5 files
+with little effort) to explain the contents of the file, including the
+nature of it, units, and related information.  All processed data and
+analysis outputs will be created by a suite of publicly available
+tools.
+
+\vspace{2mm}
+\noindent \textbf{Scientific software:} The Enzo code is already
+publicly available at \url{http://enzo-project.org}.  The PIs are
+authors of this code, and any additions made to Enzo as a part of this
+project will be included as source code in one of the Enzo public
+releases.  Code will include explanatory comments.
+
+\vspace{2mm}
+\noindent \textbf{Website:} The website associated with this project
+will be ASCII plaintext using html, php, javascript, and so on.
+
+\vspace{-3mm}
+\section{Access to Data and Data Sharing Practices and Policies}
+\vspace{-3mm}
+
+\noindent\textbf{Simulation data} will be of sufficient size (hundreds
+of terabytes to a few petabytes) that it will be difficult to make
+this available via a website, and wildly impractical to download via
+http.  As such, we will make it available to other scientists through
+the nascent National Data Service (NDS;
+\url{http://www.nationaldataservice.org/}) and hosted by archives at
+the national supercomputing centers (see part 5 of this document,
+below) with no restrictions on its use.  Instructions on its access
+will be given via the project website, and also in README files in the
+top-level directories on the NDS site.  This will be done by the end
+of the grant period, although if possible we will make data available
+upon acceptance of the relevant peer-reviewed papers.
+
+\noindent\textbf{Processed simulation data and analysis products} will
+also be of large size (hundreds of gigabytes to terabytes), and it
+will be impractical to make it all available via a website.  The most
+bulky data will be made available via the National Data Service (see
+directly above, and Part 5), and other products (images, mock
+observations, merger trees, halo catalogs, and so on) will be made
+available via an MSU website.  This website will allow users to
+download and use the data with no restrictions on its use.  This will
+be done by the end of the grant period, although if possible we will
+make data available upon acceptance of the relevant peer-reviewed
+papers.
+
+\noindent\textbf{Source code} will be contributed back to the Enzo or YT software
+projects (as appropriate) by the completion of the grant period (and,
+more likely, by the acceptance of the peer-reviewed papers using the
+relevant source code).  This software will then be available without
+restriction to any user who wishes to download, use, or modify it.
+
+\noindent\textbf{Website} will be available on the Internet.  All materials,
+including movies, images, and text, will be licensed for re-use with
+appropriate credit given using a license such as the GNU Copyleft
+license.
+
+Given the nature of the work being done as a part of this project and
+our collaboration's stance regarding open source scientific software
+and reproducible research, we have no significant privacy,
+confidentiality, or intellectual property requirements that pertain to
+this research.
+
+\vspace{-3mm}
+\section{Policies for Re-Use, Re-Distribution and Production of
+  Derivatives}
+\vspace{-3mm}
+
+All data created as a result of this project – including raw
+simulation data, processed data, data analysis products, and source
+code – will be freely available and usable by the public and by other
+researchers.  The only condition we will \textbf{require} is citation
+of our publications upon use of our data (raw, processed, or analysis
+products).  We will further \textbf{request, but not require,} that
+users of our software contribute any changes, improvements, or
+additions that they make back to the appropriate open-source software
+project.  Data or images that are copyrighted (by a journal, for
+example) will be marked as such by watermark or text header in the
+file.
+
+\vspace{-3mm}
+\section{Archiving of Data}
+\vspace{-3mm}
+
+Due to the type and quantity of the simulation data involved in this
+project, data archiving is a significant concern.  Raw and processed
+simulation data and data analysis products will be stored in the mass
+storage facilities at the national supercomputing facilities
+(primarily the National Center for Supercomputing Applications and the
+Texas Advanced Computing Center) and accessible via the National Data
+Service.  This data will be stored and replicated as long as the PI's
+research group continues to be allocated computing time at these
+institutes (which will be at least for the duration of this grant, and
+likely significantly longer).  However, data archiving in perpetuity
+cannot be guaranteed at present, due to the impermanent nature of the
+data tapes used for storage.
+
+Source code will be uploaded to Google Code, BitBucket, and other
+Cloud-based data providers.  While it is unclear what the future holds
+for any individual provider, it seems likely that the Enzo and YT
+projects will continue long into the future, and this source code will
+propagate, along with these projects, to whatever Internet home the
+projects find in the future.
+
+Websites relating to this project, and all of the data on said
+websites, will be hosted by Michigan State University’s Information
+Technology group on servers that are backed up regularly.  This data
+will be available to the public for as long as Dr. O’Shea is a faculty
+member at MSU.  If Dr. O’Shea leaves MSU for any reason, steps will be
+taken to ensure that this data remains available, either by moving it
+to another university or making it a part of a larger, more persistent
+project at MSU.  
+
+\end{document}

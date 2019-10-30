@@ -1,0 +1,91 @@
+\vspace{-4mm}
+\section{Tools}
+\label{sec:codes}
+\vspace{-3mm}
+
+% \brian  \dave  \red{maybe we want to get rid of this section, lose the yt
+% discussion, and move our description of Enzo to section 3.1.3?  (I am
+% a big fan of this)}
+ 
+% \subsection{\enzo}
+% \label{sec:enzo}
+% \vspace{-1mm}
+
+\noindent
+{\large \textbf{The \enzo\ code.}}
+The calculations described in this proposal will be performed using
+the \enzo\ code.  \enzo\ is a publicly available Cartesian adaptive
+mesh 
+refinement code used for the simulation of cosmological and
+astrophysical phenomena
+
+\cite[][\url{http://enzo-project.org}]{2014ApJS..211...19B}.  \enzo\
+uses a block-structured adaptive mesh refinement scheme 
+\cite{Berger89} to achieve high spatial and temporal resolution, and
+combines an N-body adaptive particle-mesh solver for dark matter
+dynamics with a Piecewise Parabolic Method (PPM) hydro solver that has
+been extensively 
+modified for cosmological applications and hypersonic
+flows \cite{Bryan95}.  In addition, the code includes a range of other
+physics, including both equilibrium and nonequilibrium chemistry and
+cooling models, radiative cooling using a Raymond-Smith model and
+Cloudy emissivity tables \cite{2008MNRAS.385.1443S}, and prescriptions
+for the formation and feedback of both stellar populations and black
+holes.  \enzo\ also includes modules for magnetohydrodynamics (both
+the Dedner divergence-cleaning method and a constrained transport
+method; \cite{Wang:2009a,Wang:2010,Collins10}) and radiation transport
+using a ray-casting method and flux-limited diffusion \cite{Wise11,
+Reynolds09}.  \enzo\ has been used to model a wide variety of
+cosmological and astrophysical phenomena -- most relevant to this
+proposal, \enzo\ has been used heavily to study high- and
+low-redshift cosmological structure formation \cite{Abel02, Turk09,
+2007ApJ...654...66O, 2012MNRAS.427..311W, 2008MNRAS.385.1443S,
+2012ApJ...749..140H, 2014ApJ...791...64E, 2013MNRAS.432.1989S}, the
+intergalactic and circumgalactic medium
+\cite{2007ApJ...671...27H,2011ApJ...731....6S,2013MNRAS.430.1548H,2012ApJ...759..137J},
+and the properties of star-forming molecular clouds
+\cite{Kritsuk11,Kritsuk11b,Collins11,Collins11b,Collins12,Schmidt13}.
+
+The \enzo\ code has been selected by the NSF to be part of the
+Petascale Computing Resource Allocation (PRAC) program under three
+separate allocations totaling approximately 300 million core-hours, and was one of
+the handful of codes that were first used on Blue Waters when it was
+first made available for science runs in early 2012.  Near-perfect
+scaling of the code in its unigrid (non-AMR) mode has  been
+demonstrated to more than 90,000 CPU cores.  Calculations using AMR do
+not scale as well, although reasonable performance at up to several
+thousand CPU cores can be expected for large, well-balanced, and
+physics-rich AMR runs.  Given that the simulations needed for this
+project are well below this scale, \enzo\ will easily handle the
+calculations that are necessary for the proposed work.
+
+% \vspace{-3mm}
+% \subsection{\yt}
+% \label{sec:yt}
+% \vspace{-1mm}
+
+\vspace{2mm}
+\noindent
+{\large \textbf{The \yt\ code.}}
+Our simulations will be analyzed and visualized with the \yt\ package
+\cite[][\url{http://yt-project.org}]{Turk11}, which is an open source
+analysis and visualization toolkit for grid- and particle-based
+simulations.  \yt\ was originally developed to work with \enzo, but
+now supports numerous simulation codes, including both grid-based and
+particle-based astrophysical codes (i.e., FLASH, ART, Gadget,
+Gasoline).  Among the capabilities of \yt\ are slices and projections
+(both on and off the Cartesian axes); volume renderings; halo finding
+and profiling; 1, 2, and 3 dimensional profiles; light-cone
+projections; synthetic QSO sight lines (i.e., absorption line spectra);
+contouring; and clump-finding.  We will use \yt\ to perform many of
+these analysis tasks -- all of which are parallelized -- and will
+furthermore use \yt\ to make a variety of synthetic observations of
+galaxies using tools that have been developed and used by our
+collaboration \citep[e.g.,][]{Barrow17,Barrow17_FL2}.  \yt\ can be 
+used as a standalone code and is also
+callable from within an \enzo\ simulation, allowing analysis to be
+performed on in-memory datasets (a capability that will be very
+helpful for analysis of our larger simulations).  \yt\ is highly
+parallel, scales well on XSEDE computing resources, and is currently
+being optimized for the Stampede2 supercomputer.
+

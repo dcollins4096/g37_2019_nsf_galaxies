@@ -1,0 +1,116 @@
+\vspace{-3mm}
+\subsection{Observational Comparisons}
+\label{sec:observational_comps}
+\vspace{-2mm}
+
+We will perform synthetic observations of simulations using each of the
+three magnetic feedback methods described in the previous section, and
+will compare them
+to a number of recent important observations.  Each comparison will use the
+observed data from the literature, synthetic observations employing tools previously
+developed by our team and previous collaborators
+\citep[e.g.,][]{2013ApJ...765...21S,Barrow17,Barrow17_FL2}, convolved with
+resolution and noise appropriate for the target measurement.  We will also
+employ ``perfect telescope'' observations directly from the data.  Where
+possible the data reduction tools of the particular telescope will be used \citep[e.g.,
+CASA; ][]{McMullin07}.
+This will allow us to do two things: first, we will verify the physical picture of
+our simulations, allowing us to isolate problems or
+success with the calculation; second, we will test our basic hypothesis, that
+magnetic feedback from supernova explosions is an essential piece of the
+magnetization of the universe.  Finally, we will make
+predictions for measurements that will be made by both current and
+future observatories.  These will primarily target next-generation radio
+telescopes and their pathfinders, as well as JWST and WFIRST.
+
+Our catalogue of observations will include the following: synchrotron emission
+polarization; Faraday rotation measure and rotation measure synthesis; CO
+emission, assuming a conversion from CO-to-H$_2$ appropriate for the system
+\citet[e.g.][]{Genzel12,Clark15}; star
+formation tracers such as H$\alpha$ and FIR luminosity; and Zeeman Splitting in
+dense cores.
+
+\vspace{-3mm}
+\subsubsection{Extragalactic Observations}
+\vspace{-2mm}
+
+We will compare our simulations to Faraday rotation measures from
+observations of high-redshift galaxies
+\cite{2008Natur.454..302B,2008ApJ...676...70K,1998A&A...329..809A},
+the field magnitude and arrangement in local dwarf galaxies,
+\cite{2000A&A...355..128C,2011A&A...529A..94C,2012MNRAS.423L.127R,Mao12,2013MNRAS.435..149N,2014A&A...567A.134J},
+field strength, structure and coherence in nearby elliptical
+\cite{1993A&ARv...4..449W,1996MNRAS.279..229M} and spiral galaxies
+\cite{2014arXiv1411.1386V}.  We will also use measurements of
+large-scale intergalactic magnetic fields as a constraint
+\cite{2010Sci...328...73N}.   
+%RM measurements will include also include the
+%use of depolarization of background sources to explore the field strength and
+%turbulence of galxies
+%\citep{Schulman92}.  
+Recently techniques have been developed to combine polarized synchrotron
+emission with Faraday Rotation depths to probe the full magnetic configuration
+\citep{Heald09, Mao15}.
+We will primarily aim to reproduce the morphology of observed integrated
+polarization angles of galaxies \citep{Stil09}, the alignment of molecular
+clouds and spiral arms \citep{2011Natur.479..499L}, and the relation between
+field strength and galactic properties such as mass and velocity dispersion
+\citep{2014arXiv1411.1386V,Tabatabaei16}.
+We will then make predictions for (and thus
+motivate) future observations of galactic magnetic field properties that will be
+available to the current and future radio telescopes such as the Jansky VLA, ALMA, and LOFAR, and in the
+further future the Square Kilometer Array pathfinder telescopes such
+as ASKAP, APERTIF, MeerKAT, and
+the SKA itself.
+
+An extremely useful probe of the correlation of magnetic field properties and
+star formation is the
+correlation between the Far Infrared Radiation (FIR) flux and the
+Radio Continuum (RC).  A surprisingly tight correlation between these
+two fluxes has been studied for several decades \citep{Helou85}.  Both
+radiation sources are indirectly related to star formation, and we
+will aim to probe this correlation as a function of redshift.  The FIR
+comes from re-heating of dust near sites of massive star formation,
+while the RC comes form synchrotron radiation of cosmic rays
+\citep{Helou93,Niklas97}.  \cite{Murphy06} model the radio profiles
+as smoothed version of the FIR profiles, indicating that for the most
+part the RC can be seen as a diffusive flux of cosmic rays.  However,
+accurate measurement of this relation has not been reproduced in
+cosmological simulations.  Modeling the FIR is done in post-production
+after the simulations have finished, by measuring the mass
+distribution in stars at a given time and using radiative transfer to
+measure the optical depth to FIR.  Modeling the RC requires following
+the cosmic ray spectrum and the competition between radiation terms.
+These include inverse Compton scattering, ionization of neutral gas,
+and bremsstrahlung in addition to the synchrotron that is observable in the RC.  \cite{Schleicher13b} propose that at high
+redshift, inverse Compton may begin to dominate over synchrotron and the FIR-RC
+correlation will break down around $z= 2-4$, depending on the strength
+of the field and the star formation rate.  Several of our simulations
+will include the cosmic ray treatment incorporated into Enzo and
+described in \cite{Salem14,Salem14b}, suitably modified to incorporate
+cosmic ray losses by the aforementioned processes.  This will allow us
+to predict future observations by ALMA and LOFAR and to explore the
+utility of the RC as a probe of highly extincted star formation.
+
+Another important correlation is the ``Star Formation Main Sequence''
+(SFMS) of galaxies \cite{Daddi07, Speagle14}. This relation
+between star formation rate and stellar mass is a power law that is
+essentially constant over time, with a normalization that falls with
+time.  This can be interpreted as a relatively quiescent, steady-state
+star formation process with cosmic time.  Recent simulation efforts
+have reported good agreement with the SFMS at low redshift, but
+reduced star formation rate at intermediate redshifts
+\citep{Sparre15}.  We will measure this for not only the highly
+resolved galaxies, but also the entire population of galaxies formed
+from the cosmological simulation.  This will be compared to both the
+low redshift behavior \cite{Brinchmann04} and the high redshift
+properties \cite{Daddi07}.  This measurement itself is not a probe of magnetic
+fields, but as star formation depends on field strength we will
+correlate the slope and normalization of this linear relation with
+magnetic field strength in the constituent galaxies.
+
+\vspace{-3mm}
+\subsubsection{Galactic Observations}
+\vspace{-2mm}
+
+\input{galactic_measurements}

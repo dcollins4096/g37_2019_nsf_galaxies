@@ -1,0 +1,122 @@
+\def\li{\noindent$\bullet$\quad}
+\def\kms{\ifmmode{~{\rm km~s^{-1}}}\else{~km s$^{-1}$}\fi}
+\def\cc{\ifmmode{~{\rm cm^{-3}}}\else{~cm$^{-3}$}\fi}
+\def\fesc{\ifmmode{{f_{esc}}}\else{$f_{\rm esc}$}\fi}
+\def\fstar{\ifmmode{{f_\star}}\else{$f_\star$}\fi}
+\def\lsim{\lower0.3em\hbox{$\,\buildrel <\over\sim\,$}}
+\def\gsim{\lower0.3em\hbox{$\,\buildrel >\over\sim\,$}}
+\def\hst{{\it HST}}
+\def\otvet{{\sl OTVET}}
+\def\enzo{{\sc Enzo}}
+\def\moray{{\sc Moray}}
+\def\yt{{\sc yt}}
+\def\Ms{\ifmmode{~{\rm M_\odot}}\else{M$_\odot$}\fi}
+\def\Zs{\ifmmode{~{\rm Z_\odot}}\else{Z$_\odot$}\fi}
+\def\h2{H$_2$}
+\def\Ol{$\Omega_\Lambda$}
+\def\Om{$\Omega_M$}
+\def\Ob{$\Omega_b$}
+\def\tcool{$t_{\rm{cool}}$}
+\def\tcross{$t_{\rm{cross}}$}
+\def\tdyn{$t_{\rm{dyn}}$}
+\def\tvir{$T_{\rm{vir}}$}
+\def\lya{Ly$\alpha$}
+\def\hh{H$_2$}
+\def\nat{Nature}
+\def\apj{ApJ}
+\def\aj{AJ}
+\def\apjl{ApJL}
+\def\apjs{ApJS}
+\def\mnras{MNRAS}
+\def\araa{ARA\&A}
+\def\aap{A\&A}
+\def\nar{NewAR}
+\def\na{New Astronomy}
+\def\rmxaa{Revista Mexicana de Astronomia y Astrofisica}
+\def\physrep{Physics Reports}
+\def\pasa{Publications of the Astronomical Society of Australia}
+
+\def\sfr{\ensuremath{\Sigma_{\rm{SFR}}}}
+\def\sgas{\ensuremath{\Sigma_{\rm{gas}}}}
+\def\tdyn{\ensuremath{t_{\rm{dyn}}}}
+\def\halpha{\ensuremath{\rm{H}_{\alpha}}}
+
+\newcommand{\hi}{H {\sc i}}
+\newcommand{\hii}{H {\sc ii}}
+\newcommand\unit[1]{\; \textrm{#1}}
+\newcommand\mysec[1]{\noindent\textbf{#1}:}
+\def\hr{\begin{center}
+  \line(1,0){250}
+\end{center}
+}
+
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\bwo}[1]{\textcolor{red}{(BWO: #1)}}
+\newcommand{\dcc}[1]{\textcolor{blue}{(DCC: #1)}}
+\newcommand{\thischange}[1]{\textcolor{red}{#1}}
+
+
+\newcommand{\needcite}[1]{\textcolor{red}{(cite: #1)}}
+
+\newcommand{\note}[1]{{\color{red} \bf #1}}
+%\newcommand{\todo}[1]{{\noindent$\bullet$\quad {\color{red} \bf TODO
+%      (#1): }}}
+\newcommand{\todo}[1]{\reversemarginpar\marginpar{\color{red}\bf TODO}
+  {\color{red} \noindent \bf(#1)}}
+
+\newcommand{\dave}{\textcolor{blue}{DAVE DO THIS:   }}
+\newcommand{\brian}{\textcolor{red}{BRIAN DO THIS:   }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\def\paragraph{\@startsection{paragraph}{4}{\z@}{1.0ex plus 
+%    0.25ex minus 0.25ex}{-1em}{\normalsize\bf}}
+
+\let\oldenumerate=\enumerate
+\let\endoldenumerate=\endenumerate
+\renewenvironment{enumerate}{%
+  \begin{oldenumerate}%
+    \setlength{\itemsep}{0.0ex}%
+    \setlength{\parskip}{0.25ex}%
+  }%
+  {%
+  \end{oldenumerate}%
+}
+
+\let\olditemize=\itemize
+\let\endolditemize=\enditemize
+\renewenvironment{itemize}{%
+  \begin{olditemize}%
+    \setlength{\itemsep}{0.0ex}%
+    \setlength{\parskip}{0.25ex}%
+  }%
+  {%
+  \end{olditemize}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Additions from AASTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifnsf
+\newcommand\ion[2]{#1$\;${\small\rmfamily\rm{#2}}\relax}
+\def\eps@scaling{1.0}% 
+\newcommand\epsscale[1]{\gdef\eps@scaling{#1}}% 
+\newcommand\plotone[1]{% 
+ \centering 
+ \leavevmode 
+ \includegraphics[width={\eps@scaling\columnwidth}]{#1}% 
+}% 
+\newcommand\plottwo[2]{% 
+ \centering 
+ \leavevmode 
+ \columnwidth=.5\columnwidth 
+ \includegraphics[width={\eps@scaling\columnwidth}]{#1}% 
+ \hfil 
+ \includegraphics[width={\eps@scaling\columnwidth}]{#2}% 
+}% 
+\newcommand{\ssr}{Space~Sci.~Rev.}
+\fi

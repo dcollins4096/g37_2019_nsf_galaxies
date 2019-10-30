@@ -1,0 +1,25 @@
+% -*- Mode: TeX -*-
+
+%\ifx\thisfileis\anUndefinedMacro\input maybeload \fi
+
+%\thisfileis{<eb.tex.texlocal>invertedparagraphs} % abort loading if we're already loaded
+
+% This file defines a \begin{invertedparagraphs}...\end{invertedparagraphs}
+% environment that's useful in bibliographies.
+
+%\input redefine % from texlocal
+
+% Inverted paragraphs.
+
+\newdimen\invertedparindent
+\invertedparindent=20pt
+
+\newenvironment{invertedparagraphs}{%
+\list{}%
+{\setlength{\listparindent}{-\invertedparindent}%
+\setlength{\leftmargin}{\invertedparindent}%
+\setlength{\labelwidth}{0pt}%
+\setlength{\labelsep}{0pt}%
+\setlength{\itemindent}{0pt}}%
+{\item{}\hspace{-\invertedparindent}}}{\endlist}
+

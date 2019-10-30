@@ -1,0 +1,110 @@
+
+%
+%Some new control stuff right here at the top.
+%
+
+%Toggle nsf format which sucks vs. aas format which is too long. Toggles
+%document class, bibliography, and a few things in macros.txt
+\newif\ifnsf
+\nsffalse %uses the [x] citations, which is pretty much worse than stalin but is short.
+%\nsffalse %Uses aastex, which has informative citations but too long
+
+
+
+
+
+\ifnsf
+\documentclass[11pt]{NSF}
+\else
+\documentclass[11pt,preprint]{aastex}
+\fi
+
+
+
+%\pagestyle{empty}  % removes page numbers - DO THIS BEFORE SUBMISSION
+
+\usepackage{natbib}
+\usepackage{xspace}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{revindent}
+\usepackage{color}
+\usepackage{wrapfig}
+\usepackage{hyperref} %, breakurl}
+\usepackage[normalem]{ulem} %for sout to strike out text.
+%\usepackage{hyperref}
+\hypersetup{colorlinks=true}
+\hypersetup{linkcolor=blue}
+\hypersetup{citecolor=blue}
+\hypersetup{urlcolor=blue}
+\renewcommand{\sectionautorefname}{\S}
+
+\input{macros.tex}
+\input{commands.tex}
+
+\newcommand{\vorpal}{\textsc{VSim}\xspace}
+\newcommand{\usim}{\textsc{USim}\xspace}
+
+%Toggle off stuff Dave hacked out.  Brian, feel free to delete any text in
+%this block, but hgdiff sucks for text changes.
+%\newcommand{\davedelete}[1]{\sout{#1}}
+\newcommand{\davedelete}[1]{} %or hide it.
+\newcommand{\davedeletenew}[1]{} %the same as the other, but for the 2017 version.
+\newcommand{\daveadd}[1]{\red{#1}}
+\newcommand{\davenote}[1]{\green{{\tt #1}}}
+\begin{document}
+
+%\tableofcontents
+\input{title.tex}
+
+%\input{questions_for_the_authors.tex}
+
+%\input{misc_papers_from_dave.tex}
+
+% Section 1: overview and objectives
+\input{objectives.tex}
+
+% Section 2: scientific motivation
+\input{motivation.tex}
+
+% Section 3: proposed work
+\input{work.tex}
+
+% Section 4: Codes and methods (4.1 enzo, 4.2, yt)
+\input{codes.tex}
+
+% Section 5: significance of proposed work
+\input{significance.tex}
+
+%\newpage
+
+% Section 6: results from prior NSF support
+\input{prior_results.tex}
+
+% Section 7: management plan and timeline
+\input{timeline.tex}
+
+% Section 8: intellectual merit and broader impacts
+\input{merit.tex}
+
+% \input{old_notes.tex}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{References}
+\label{sec.refs}
+
+\begingroup
+\renewcommand{\section}[2]{}%
+\setcounter{page}{1}
+\ifnsf
+\bibliographystyle{jponew}  %% this gets rid of "et
+                            %% al.", because the NSF hates it and it
+                            %% makes the Baby Jesus Cry (tm)
+\else
+\bibliographystyle{apj}
+\fi
+\bibliography{proposal}
+\endgroup
+
+\end{document}

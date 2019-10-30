@@ -1,0 +1,1383 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  30 OCT 2019 12:52
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**proposal
+(./proposal.tex
+LaTeX2e <2018-12-01>
+(./NSF.cls
+Document Class: NSF 
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
+)
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen105
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks15
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks16
+\eqnshift@=\dimen106
+\alignsep@=\dimen107
+\tagshift@=\dimen108
+\tagwidth@=\dimen109
+\totwidth@=\dimen110
+\lineht@=\dimen111
+\@envbody=\toks17
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\SC@BOXWD=\dimen112
+\SC@CAPWD=\dimen113
+\SC@tempdima=\dimen114
+\SC@tempdimb=\dimen115
+\c@SC@C=\count100
+\SC@BOX=\box29
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen116
+\WF@size=\dimen117
+\c@WF@wrappedlines=\count101
+\WF@box=\box30
+\WF@everypar=\toks19
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
+\col@sep=\dimen118
+\ar@mcellbox=\box31
+\extrarowheight=\dimen119
+\NC@list=\toks20
+\extratabsurround=\skip46
+\backup@length=\skip47
+\ar@cellbox=\box32
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks21
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip48
+\f@nch@O@elh=\skip49
+\f@nch@O@erh=\skip50
+\f@nch@O@olh=\skip51
+\f@nch@O@orh=\skip52
+\f@nch@O@elf=\skip53
+\f@nch@O@erf=\skip54
+\f@nch@O@olf=\skip55
+\f@nch@O@orf=\skip56
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen122
+\Hy@linkcounter=\count102
+\Hy@pagecounter=\count103
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count104
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count105
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen123
+\Fld@menulength=\count106
+\Field@Width=\dimen124
+\Fld@charsize=\dimen125
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count107
+\c@Item=\count108
+\c@Hfootnote=\count109
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count110
+\c@bookmark@seq@number=\count111
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip57
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+\TX@col@width=\dimen126
+\TX@old@table=\dimen127
+\TX@old@col=\dimen128
+\TX@target=\dimen129
+\TX@delta=\dimen130
+\TX@cols=\count112
+\TX@ftn=\toks23
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip58
+\bibsep=\skip59
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count113
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip60
+\subfigcapskip=\skip61
+\subfigcaptopadj=\dimen131
+\subfigbottomskip=\skip62
+\subfigcapmargin=\dimen132
+\subfiglabelskip=\skip63
+\c@subfigure=\count114
+\c@lofdepth=\count115
+\c@subtable=\count116
+\c@lotdepth=\count117
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2019/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip64
+\subfig@bottom=\skip65
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+\multirow@colwidth=\skip66
+\multirow@cntb=\count118
+\multirow@dima=\skip67
+\bigstrutjot=\dimen133
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 37.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(./revindent.sty
+\invertedparindent=\dimen134
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box33
+\UL@hyphenbox=\box34
+\UL@skip=\skip68
+\UL@hook=\toks24
+\UL@height=\dimen135
+\UL@pe=\count119
+\UL@pixel=\dimen136
+\ULC@box=\box35
+Package: ulem 2012/05/18
+\ULdepth=\dimen137
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 35.
+ (./macros.tex) (./commands.tex
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+\epsfxsize=\dimen138
+\epsfysize=\dimen139
+))
+(./proposal.aux)
+\openout1 = `proposal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 54.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip69
+\RaggedLeftLeftskip=\skip70
+\RaggedRightLeftskip=\skip71
+\CenteringRightskip=\skip72
+\RaggedLeftRightskip=\skip73
+\RaggedRightRightskip=\skip74
+\CenteringParfillskip=\skip75
+\RaggedLeftParfillskip=\skip76
+\RaggedRightParfillskip=\skip77
+\JustifyingParfillskip=\skip78
+\CenteringParindent=\skip79
+\RaggedLeftParindent=\skip80
+\RaggedRightParindent=\skip81
+\JustifyingParindent=\skip82
+)
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count120
+\scratchdimen=\dimen140
+\scratchbox=\box36
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen141
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box37
+Package hyperref Info: Link coloring ON on input line 54.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count126
+)
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
+
+(./proposal.out) (./proposal.out)
+\@outlinefile=\write3
+\openout3 = `proposal.out'.
+
+ (./title.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
+) (./objectives.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 8.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 8.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]) (./mot
+ivation.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
+
+
+Package natbib Warning: Citation `2008Natur.454..302B' on page 2 undefined on i
+nput line 49.
+
+
+Package natbib Warning: Citation `Joshi13' on page 2 undefined on input line 49
+.
+
+
+Package natbib Warning: Citation `Farnes14' on page 2 undefined on input line 4
+9.
+
+
+Package natbib Warning: Citation `2008ApJ...676...70K' on page 2 undefined on i
+nput line 49.
+
+
+Package natbib Warning: Citation `1998A&A...329..809A' on page 2 undefined on i
+nput line 62.
+
+[2]
+
+Package natbib Warning: Citation `Mao17' on page 3 undefined on input line 71.
+
+
+Package natbib Warning: Citation `2010Sci...328...73N' on page 3 undefined on i
+nput line 90.
+
+
+Package natbib Warning: Citation `2011ApJ...733L..21D' on page 3 undefined on i
+nput line 97.
+
+
+Package natbib Warning: Citation `2010MNRAS.406L..70T' on page 3 undefined on i
+nput line 97.
+
+
+Package natbib Warning: Citation `1997PhRvL..78.3610B' on page 3 undefined on i
+nput line 108.
+
+
+Package natbib Warning: Citation `2012SSRv..166...37W' on page 3 undefined on i
+nput line 108.
+
+
+Package natbib Warning: Citation `2013A&ARv..21...62D' on page 3 undefined on i
+nput line 108.
+
+
+Package natbib Warning: Citation `Carilli02' on page 3 undefined on input line 
+121.
+
+
+Package natbib Warning: Citation `2005mpge.conf..231E' on page 3 undefined on i
+nput line 121.
+
+
+Package natbib Warning: Citation `2005A&A...434...67V' on page 3 undefined on i
+nput line 121.
+
+
+Package natbib Warning: Citation `2014arXiv1411.1386V' on page 3 undefined on i
+nput line 145.
+
+
+Package natbib Warning: Citation `Tabatabaei16' on page 3 undefined on input li
+ne 147.
+
+
+Package natbib Warning: Citation `Mao12' on page 3 undefined on input line 156.
+
+
+
+Package natbib Warning: Citation `Beck13' on page 3 undefined on input line 156
+.
+
+
+Package natbib Warning: Citation `2014arXiv1411.1386V' on page 3 undefined on i
+nput line 161.
+
+
+Package natbib Warning: Citation `2011Natur.479..499L' on page 3 undefined on i
+nput line 168.
+
+[3]
+
+Package natbib Warning: Citation `1993A&ARv...4..449W' on page 4 undefined on i
+nput line 194.
+
+
+Package natbib Warning: Citation `1996MNRAS.279..229M' on page 4 undefined on i
+nput line 194.
+
+
+Package natbib Warning: Citation `2000A&A...355..128C' on page 4 undefined on i
+nput line 200.
+
+
+Package natbib Warning: Citation `2011A&A...529A..94C' on page 4 undefined on i
+nput line 200.
+
+
+Package natbib Warning: Citation `2012MNRAS.423L.127R' on page 4 undefined on i
+nput line 200.
+
+
+Package natbib Warning: Citation `Mao12' on page 4 undefined on input line 200.
+
+
+
+Package natbib Warning: Citation `2013MNRAS.435..149N' on page 4 undefined on i
+nput line 200.
+
+
+Package natbib Warning: Citation `2014A&A...567A.134J' on page 4 undefined on i
+nput line 200.
+
+
+Package natbib Warning: Citation `2014arXiv1411.1386V' on page 4 undefined on i
+nput line 205.
+
+
+Package natbib Warning: Citation `Gaensler01' on page 4 undefined on input line
+ 235.
+
+
+Package natbib Warning: Citation `Fauvet11' on page 4 undefined on input line 2
+36.
+
+
+Package natbib Warning: Citation `PlanckIntermediateXIX15' on page 4 undefined 
+on input line 238.
+
+
+Package natbib Warning: Citation `Thomson80' on page 4 undefined on input line 
+247.
+
+
+Package natbib Warning: Citation `Jaffe11' on page 4 undefined on input line 24
+7.
+
+
+Package natbib Warning: Citation `2015ASSL..407..483H' on page 4 undefined on i
+nput line 248.
+
+
+Package natbib Warning: Citation `Mao10' on page 4 undefined on input line 252.
+
+
+
+Package natbib Warning: Citation `Jansson12' on page 4 undefined on input line 
+256.
+
+
+Package natbib Warning: Citation `Moss12' on page 4 undefined on input line 263
+.
+
+
+Package natbib Warning: Citation `2014ApJ...786...54P' on page 4 undefined on i
+nput line 270.
+
+
+Package natbib Warning: Citation `2015ApJ...808L..30V' on page 4 undefined on i
+nput line 273.
+
+
+Package natbib Warning: Citation `2017ApJ...845...80V' on page 4 undefined on i
+nput line 273.
+
+
+Package natbib Warning: Citation `2017ARA&A..55..111H' on page 4 undefined on i
+nput line 278.
+
+
+Package natbib Warning: Citation `2015aska.confE..41H' on page 4 undefined on i
+nput line 280.
+
+[4]
+<Fletcher.png, id=126, 643.40375pt x 788.9475pt>
+File: Fletcher.png Graphic file (type png)
+<use Fletcher.png>
+Package pdftex.def Info: Fletcher.png  used on input line 284.
+(pdftex.def)             Requested size: 136.22578pt x 167.04419pt.
+<Planck.jpg, id=127, 1204.5pt x 602.25pt>
+File: Planck.jpg Graphic file (type jpg)
+<use Planck.jpg>
+Package pdftex.def Info: Planck.jpg  used on input line 285.
+(pdftex.def)             Requested size: 324.13208pt x 162.06747pt.
+
+
+Package natbib Warning: Citation `Fletcher11' on page 5 undefined on input line
+ 304.
+
+
+Package natbib Warning: Citation `PlanckIntermediateXIX15' on page 5 undefined 
+on input line 304.
+
+
+Package natbib Warning: Citation `Fletcher11' on page 5 undefined on input line
+ 304.
+
+
+Package natbib Warning: Citation `PlanckIntermediateXIX15' on page 5 undefined 
+on input line 304.
+
+
+Package natbib Warning: Citation `Crutcher12' on page 5 undefined on input line
+ 330.
+
+
+Package natbib Warning: Citation `McKee07' on page 5 undefined on input line 33
+1.
+
+
+Package natbib Warning: Citation `Padoan13' on page 5 undefined on input line 3
+34.
+
+
+Package natbib Warning: Citation `Li14' on page 5 undefined on input line 334.
+
+
+Package natbib Warning: Citation `Crutcher12' on page 5 undefined on input line
+ 347.
+
+
+Package natbib Warning: Citation `Padoan99' on page 5 undefined on input line 3
+51.
+
+
+Package natbib Warning: Citation `Padoan04c' on page 5 undefined on input line 
+351.
+
+
+Package natbib Warning: Citation `Heyer12' on page 5 undefined on input line 35
+3.
+
+
+Package natbib Warning: Citation `deAvillez05' on page 5 undefined on input lin
+e 355.
+
+
+Package natbib Warning: Citation `Kritsuk11c' on page 5 undefined on input line
+ 355.
+
+
+Package natbib Warning: Citation `Li13' on page 5 undefined on input line 361.
+
+
+Package natbib Warning: Citation `Li09' on page 5 undefined on input line 362.
+
+
+Package natbib Warning: Citation `Green12' on page 5 undefined on input line 36
+8.
+
+
+Package natbib Warning: Citation `Elmegreen04' on page 5 undefined on input lin
+e 371.
+
+
+Package natbib Warning: Citation `MacLow04' on page 5 undefined on input line 3
+71.
+
+
+Package natbib Warning: Citation `Padoan04' on page 5 undefined on input line 3
+73.
+
+
+Package natbib Warning: Citation `Heyer12' on page 5 undefined on input line 37
+3.
+
+
+Package natbib Warning: Citation `2011Natur.479..499L' on page 5 undefined on i
+nput line 376.
+
+[5 <./Fletcher.png> <./Planck.jpg>]
+
+Package natbib Warning: Citation `Federrath12' on page 6 undefined on input lin
+e 381.
+
+
+Package natbib Warning: Citation `Collins12' on page 6 undefined on input line 
+381.
+
+
+Package natbib Warning: Citation `Rey-Raposo14' on page 6 undefined on input li
+ne 381.
+
+<LiHenning.png, id=133, 574.145pt x 714.67pt>
+File: LiHenning.png Graphic file (type png)
+<use LiHenning.png>
+Package pdftex.def Info: LiHenning.png  used on input line 405.
+(pdftex.def)             Requested size: 108.04163pt x 134.4801pt.
+<g30_g18d_annotate_7.png, id=135, 784.1295pt x 664.884pt>
+File: g30_g18d_annotate_7.png Graphic file (type png)
+<use g30_g18d_annotate_7.png>
+Package pdftex.def Info: g30_g18d_annotate_7.png  used on input line 406.
+(pdftex.def)             Requested size: 162.53195pt x 137.81375pt.
+<g18d_0100_Projection_x_magnetic_field_strength_ones.png, id=136, 784.1295pt x 
+664.884pt>
+File: g18d_0100_Projection_x_magnetic_field_strength_ones.png Graphic file (typ
+e png)
+<use g18d_0100_Projection_x_magnetic_field_strength_ones.png>
+Package pdftex.def Info: g18d_0100_Projection_x_magnetic_field_strength_ones.pn
+g  used on input line 407.
+(pdftex.def)             Requested size: 162.53195pt x 137.81375pt.
+
+Package natbib Warning: Citation `2011Natur.479..499L' on page 6 undefined on i
+nput line 422.
+
+
+Package natbib Warning: Citation `2011Natur.479..499L' on page 6 undefined on i
+nput line 422.
+
+
+Package natbib Warning: Citation `2002RvMP...74..775W' on page 6 undefined on i
+nput line 446.
+
+
+Package natbib Warning: Citation `2012SSRv..166...37W' on page 6 undefined on i
+nput line 446.
+
+[6 <./LiHenning.png> <./g30_g18d_annotate_7.png> <./g18d_0100_Projection_x_magn
+etic_field_strength_ones.png>]
+
+Package natbib Warning: Citation `Brandenburg05' on page 7 undefined on input l
+ine 489.
+
+
+Package natbib Warning: Citation `Beck13' on page 7 undefined on input line 492
+.
+
+
+Package natbib Warning: Citation `Collins11' on page 7 undefined on input line 
+496.
+
+
+Package natbib Warning: Citation `2002RvMP...74..775W' on page 7 undefined on i
+nput line 502.
+
+
+Package natbib Warning: Citation `1969Natur.223..936H' on page 7 undefined on i
+nput line 503.
+
+
+Package natbib Warning: Citation `1990ApJ...364..451D' on page 7 undefined on i
+nput line 503.
+
+) (./work.tex
+
+Package natbib Warning: Citation `Butsky17' on page 7 undefined on input line 2
+0.
+
+
+Package natbib Warning: Citation `Butsky17' on page 7 undefined on input line 2
+2.
+
+[7] (./simulations.tex
+
+Package natbib Warning: Citation `2014arXiv1411.1386V' on page 8 undefined on i
+nput line 46.
+
+
+Package natbib Warning: Citation `2008Natur.454..302B' on page 8 undefined on i
+nput line 52.
+
+
+Package natbib Warning: Citation `2008ApJ...676...70K' on page 8 undefined on i
+nput line 52.
+
+
+Package natbib Warning: Citation `1998A&A...329..809A' on page 8 undefined on i
+nput line 52.
+
+
+Package natbib Warning: Citation `2000A&A...355..128C' on page 8 undefined on i
+nput line 58.
+
+
+Package natbib Warning: Citation `2011A&A...529A..94C' on page 8 undefined on i
+nput line 58.
+
+
+Package natbib Warning: Citation `2012MNRAS.423L.127R' on page 8 undefined on i
+nput line 58.
+
+
+Package natbib Warning: Citation `Mao12' on page 8 undefined on input line 58.
+
+
+Package natbib Warning: Citation `2013MNRAS.435..149N' on page 8 undefined on i
+nput line 58.
+
+
+Package natbib Warning: Citation `2014A&A...567A.134J' on page 8 undefined on i
+nput line 58.
+
+
+Package natbib Warning: Citation `1993A&ARv...4..449W' on page 8 undefined on i
+nput line 62.
+
+
+Package natbib Warning: Citation `1996MNRAS.279..229M' on page 8 undefined on i
+nput line 62.
+
+
+Package natbib Warning: Citation `2011MNRAS.415.2101H' on page 8 undefined on i
+nput line 69.
+
+
+Package natbib Warning: Citation `2012MNRAS.423.1726S' on page 8 undefined on i
+nput line 76.
+
+
+Package natbib Warning: Citation `2014MNRAS.444.1518V' on page 8 undefined on i
+nput line 76.
+
+
+Package natbib Warning: Citation `2014MNRAS.445..581H' on page 8 undefined on i
+nput line 76.
+
+[8]
+
+Package natbib Warning: Citation `Pakmor17' on page 9 undefined on input line 1
+60.
+
+
+Package natbib Warning: Citation `Rieder16' on page 9 undefined on input line 1
+61.
+
+
+Package natbib Warning: Citation `Rieder17' on page 9 undefined on input line 1
+61.
+
+
+Package natbib Warning: Citation `Butsky17' on page 9 undefined on input line 1
+61.
+
+
+Package natbib Warning: Citation `Vazza17' on page 9 undefined on input line 16
+2.
+
+
+Package natbib Warning: Citation `2010ApJ...721L.134S' on page 9 undefined on i
+nput line 178.
+
+
+Package natbib Warning: Citation `2013AN....334..531S' on page 9 undefined on i
+nput line 178.
+
+
+Package natbib Warning: Citation `Hill12' on page 9 undefined on input line 191
+.
+
+
+Package natbib Warning: Citation `Shetty12b' on page 9 undefined on input line 
+191.
+
+
+Package natbib Warning: Citation `Kim15b' on page 9 undefined on input line 191
+.
+
+
+Package natbib Warning: Citation `Walch15' on page 9 undefined on input line 19
+1.
+
+
+Package natbib Warning: Citation `Padoan16' on page 9 undefined on input line 1
+91.
+
+
+Package natbib Warning: Citation `Butsky17' on page 9 undefined on input line 1
+97.
+
+
+Package natbib Warning: Citation `Joung06' on page 9 undefined on input line 19
+9.
+
+
+Package natbib Warning: Citation `Hill12' on page 9 undefined on input line 199
+.
+
+
+Package natbib Warning: Citation `Walch15' on page 9 undefined on input line 20
+2.
+
+
+Package natbib Warning: Citation `2014ApJS..211...19B' on page 9 undefined on i
+nput line 205.
+
+
+Package natbib Warning: Citation `Ferland17' on page 9 undefined on input line 
+205.
+
+
+Package natbib Warning: Citation `Tasker11' on page 9 undefined on input line 2
+08.
+
+
+Package natbib Warning: Citation `2014ApJ...783...75M' on page 9 undefined on i
+nput line 208.
+
+[9]
+
+Package natbib Warning: Citation `Dedner02' on page 10 undefined on input line 
+211.
+
+
+Package natbib Warning: Citation `Gardiner05' on page 10 undefined on input lin
+e 212.
+
+
+Package natbib Warning: Citation `Collins10' on page 10 undefined on input line
+ 212.
+
+
+Package natbib Warning: Citation `2012ApJ...749..140H' on page 10 undefined on 
+input line 364.
+
+
+Package natbib Warning: Citation `2012ApJ...759..137J' on page 10 undefined on 
+input line 364.
+
+
+Package natbib Warning: Citation `2013MNRAS.430.1548H' on page 10 undefined on 
+input line 364.
+
+) (./measurements.tex
+
+Package natbib Warning: Citation `2013ApJ...765...21S' on page 10 undefined on 
+input line 12.
+
+
+Package natbib Warning: Citation `Barrow17' on page 10 undefined on input line 
+12.
+
+
+Package natbib Warning: Citation `Barrow17_FL2' on page 10 undefined on input l
+ine 12.
+
+
+Package natbib Warning: Citation `McMullin07' on page 10 undefined on input lin
+e 16.
+
+
+Package natbib Warning: Citation `Genzel12' on page 10 undefined on input line 
+29.
+
+
+Package natbib Warning: Citation `Clark15' on page 10 undefined on input line 2
+9.
+
+[10]
+
+Package natbib Warning: Citation `2008Natur.454..302B' on page 11 undefined on 
+input line 39.
+
+
+Package natbib Warning: Citation `2008ApJ...676...70K' on page 11 undefined on 
+input line 39.
+
+
+Package natbib Warning: Citation `1998A&A...329..809A' on page 11 undefined on 
+input line 39.
+
+
+Package natbib Warning: Citation `2000A&A...355..128C' on page 11 undefined on 
+input line 41.
+
+
+Package natbib Warning: Citation `2011A&A...529A..94C' on page 11 undefined on 
+input line 41.
+
+
+Package natbib Warning: Citation `2012MNRAS.423L.127R' on page 11 undefined on 
+input line 41.
+
+
+Package natbib Warning: Citation `Mao12' on page 11 undefined on input line 41.
+
+
+
+Package natbib Warning: Citation `2013MNRAS.435..149N' on page 11 undefined on 
+input line 41.
+
+
+Package natbib Warning: Citation `2014A&A...567A.134J' on page 11 undefined on 
+input line 41.
+
+
+Package natbib Warning: Citation `1993A&ARv...4..449W' on page 11 undefined on 
+input line 43.
+
+
+Package natbib Warning: Citation `1996MNRAS.279..229M' on page 11 undefined on 
+input line 43.
+
+
+Package natbib Warning: Citation `2014arXiv1411.1386V' on page 11 undefined on 
+input line 44.
+
+
+Package natbib Warning: Citation `2010Sci...328...73N' on page 11 undefined on 
+input line 46.
+
+
+Package natbib Warning: Citation `Heald09' on page 11 undefined on input line 5
+3.
+
+
+Package natbib Warning: Citation `Mao15' on page 11 undefined on input line 53.
+
+
+
+Package natbib Warning: Citation `Stil09' on page 11 undefined on input line 55
+.
+
+
+Package natbib Warning: Citation `2011Natur.479..499L' on page 11 undefined on 
+input line 56.
+
+
+Package natbib Warning: Citation `2014arXiv1411.1386V' on page 11 undefined on 
+input line 58.
+
+
+Package natbib Warning: Citation `Tabatabaei16' on page 11 undefined on input l
+ine 58.
+
+
+Package natbib Warning: Citation `Helou85' on page 11 undefined on input line 7
+0.
+
+
+Package natbib Warning: Citation `Helou93' on page 11 undefined on input line 7
+5.
+
+
+Package natbib Warning: Citation `Niklas97' on page 11 undefined on input line 
+75.
+
+
+Package natbib Warning: Citation `Murphy06' on page 11 undefined on input line 
+75.
+
+
+Package natbib Warning: Citation `Schleicher13b' on page 11 undefined on input 
+line 85.
+
+
+Package natbib Warning: Citation `Salem14' on page 11 undefined on input line 9
+0.
+
+
+Package natbib Warning: Citation `Salem14b' on page 11 undefined on input line 
+90.
+
+
+Package natbib Warning: Citation `Daddi07' on page 11 undefined on input line 9
+6.
+
+
+Package natbib Warning: Citation `Speagle14' on page 11 undefined on input line
+ 96.
+
+
+Package natbib Warning: Citation `Sparre15' on page 11 undefined on input line 
+103.
+
+
+Package natbib Warning: Citation `Brinchmann04' on page 11 undefined on input l
+ine 106.
+
+
+Package natbib Warning: Citation `Daddi07' on page 11 undefined on input line 1
+07.
+
+(./galactic_measurements.tex [11]
+
+Package natbib Warning: Citation `Jackson06' on page 12 undefined on input line
+ 24.
+
+
+Package natbib Warning: Citation `Roman-Duval10' on page 12 undefined on input 
+line 24.
+
+
+Package natbib Warning: Citation `Li09' on page 12 undefined on input line 37.
+
+
+Package natbib Warning: Citation `Fletcher11' on page 12 undefined on input lin
+e 37.
+
+
+Package natbib Warning: Citation `Clark14' on page 12 undefined on input line 4
+5.
+
+
+Package natbib Warning: Citation `PlanckXXXII14' on page 12 undefined on input 
+line 46.
+
+
+Package natbib Warning: Citation `Clark14' on page 12 undefined on input line 5
+0.
+
+))) (./codes.tex
+
+Package natbib Warning: Citation `2014ApJS..211...19B' on page 12 undefined on 
+input line 22.
+
+
+Package natbib Warning: Citation `Berger89' on page 12 undefined on input line 
+24.
+
+
+Package natbib Warning: Citation `Bryan95' on page 12 undefined on input line 2
+9.
+
+
+Package natbib Warning: Citation `2008MNRAS.385.1443S' on page 12 undefined on 
+input line 32.
+
+
+Package natbib Warning: Citation `Wang:2009a' on page 12 undefined on input lin
+e 36.
+
+
+Package natbib Warning: Citation `Wang:2010' on page 12 undefined on input line
+ 36.
+
+
+Package natbib Warning: Citation `Collins10' on page 12 undefined on input line
+ 36.
+
+
+Package natbib Warning: Citation `Wise11' on page 12 undefined on input line 38
+.
+
+
+Package natbib Warning: Citation `Reynolds09' on page 12 undefined on input lin
+e 38.
+
+
+Package natbib Warning: Citation `Abel02' on page 12 undefined on input line 43
+.
+
+
+Package natbib Warning: Citation `Turk09' on page 12 undefined on input line 43
+.
+
+
+Package natbib Warning: Citation `2007ApJ...654...66O' on page 12 undefined on 
+input line 43.
+
+
+Package natbib Warning: Citation `2012MNRAS.427..311W' on page 12 undefined on 
+input line 43.
+
+
+Package natbib Warning: Citation `2008MNRAS.385.1443S' on page 12 undefined on 
+input line 43.
+
+
+Package natbib Warning: Citation `2012ApJ...749..140H' on page 12 undefined on 
+input line 43.
+
+
+Package natbib Warning: Citation `2014ApJ...791...64E' on page 12 undefined on 
+input line 43.
+
+
+Package natbib Warning: Citation `2013MNRAS.432.1989S' on page 12 undefined on 
+input line 43.
+
+
+Package natbib Warning: Citation `2007ApJ...671...27H' on page 12 undefined on 
+input line 45.
+
+
+Package natbib Warning: Citation `2011ApJ...731....6S' on page 12 undefined on 
+input line 45.
+
+
+Package natbib Warning: Citation `2013MNRAS.430.1548H' on page 12 undefined on 
+input line 45.
+
+
+Package natbib Warning: Citation `2012ApJ...759..137J' on page 12 undefined on 
+input line 45.
+
+
+Package natbib Warning: Citation `Kritsuk11' on page 12 undefined on input line
+ 47.
+
+
+Package natbib Warning: Citation `Kritsuk11b' on page 12 undefined on input lin
+e 47.
+
+
+Package natbib Warning: Citation `Collins11' on page 12 undefined on input line
+ 47.
+
+
+Package natbib Warning: Citation `Collins11b' on page 12 undefined on input lin
+e 47.
+
+
+Package natbib Warning: Citation `Collins12' on page 12 undefined on input line
+ 47.
+
+
+Package natbib Warning: Citation `Schmidt13' on page 12 undefined on input line
+ 47.
+
+[12]
+
+Package natbib Warning: Citation `Turk11' on page 13 undefined on input line 71
+.
+
+
+Package natbib Warning: Citation `Barrow17' on page 13 undefined on input line 
+84.
+
+
+Package natbib Warning: Citation `Barrow17_FL2' on page 13 undefined on input l
+ine 84.
+
+) (./significance.tex) (./prior_results.tex
+
+Package natbib Warning: Citation `Barrow17' on page 13 undefined on input line 
+58.
+
+
+Package natbib Warning: Citation `Barrow17_FL2' on page 13 undefined on input l
+ine 58.
+
+
+Package natbib Warning: Citation `2017ApJ...847...59H' on page 13 undefined on 
+input line 58.
+
+
+Package natbib Warning: Citation `2016ApJ...833...84X' on page 13 undefined on 
+input line 58.
+
+
+Package natbib Warning: Citation `2016ApJ...832L...5X' on page 13 undefined on 
+input line 58.
+
+[13]) (./timeline.tex [14]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 78.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
+) (./merit.tex)
+[15]
+No file proposal.bbl.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.109 \end{document}
+                     [1]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
+ (./proposal.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
+Package rerunfilecheck Info: File `proposal.out' has not changed.
+(rerunfilecheck)             Checksum: 3DBEB77DC802E4E9E12139B2FAFA2EC6;1526.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
+ ) 
+Here is how much of TeX's memory you used:
+ 7609 strings out of 492616
+ 106171 string characters out of 6129482
+ 206715 words of memory out of 5000000
+ 11293 multiletter control sequences out of 15000+600000
+ 26436 words of font info for 61 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,6n,45p,847b,419s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
+019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf
+-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/font
+s/type1/urw/times/utmri8a.pfb>
+Output written on proposal.pdf (16 pages, 4578529 bytes).
+PDF statistics:
+ 261 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
+ 50 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+
