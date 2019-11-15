@@ -1,0 +1,50 @@
+
+In this project, we will use high dynamic range magnetohydrodynamical
+(MHD) simulations to understand how galactic-scale magnetic fields
+affect the formation and evolution of molecular clouds, and to
+identify the characteristics of these magnetized clouds that pertain
+to star formation.  Specifically, we will use a targeted series of
+high resolution MHD simulations of galaxy formation, both in a
+cosmological context (Section~\ref{sec:cosmo_sims}) and as isolated, idealized
+galaxies (Section~\ref{sec:molcloud_sims}), to explore the evolution
+of magnetic fields through cosmic time.  
+
+Each series of simulations will use
+three main magnetic evolution assumptions: \emph{dynamo-only}  simulations,
+wherein a weak seed field fills space at the beginning of the simulation, and
+two \emph{feedback} recipes that vary the amount of field injected through
+supernovae.  These \emph{feedback} recipes will use the toroidal injection
+implemented in \enzo\ by \citet{Butsky17}.  This model deposits a fraction,
+$\sigma$, of supernova energy in a toroidal configuration on the grid.  Our
+large-field run will clone \citep{Butsky17} and use
+ $10^{43}$erg per $\msun$ of initial
+stellar mass, and our low-field run will use $1\%$ of that value.  For each of
+the observational diagnostics,
+(Section~\ref{sec:observational_comps}) we will perform synthetic observations,
+matching noise and telescope resolution of the respective instruments, and
+perform Baysian estimation to compare the four populations.  We expect that the
+\emph{dynamo-only} simulations will fall short, which will allow us to bracket
+the viability of our simulations.  In addition, we will perform the analysis on
+the unfiltered simulations in the ``perfect telescope'' limit, which will allow
+us to examine the ability of future SKA or Next Generation VLA observations to
+explore these regions.
+
+These calculations will be run with the \enzo\ and \enzoe\ codes
+(Section~\ref{sec:codes}) using computing time secured through the XSEDE and
+PRAC allocation processes (Section~\ref{sec:comptime_sims}).  \enzoe\ is the
+developmental exascale successor to \enzo, and will allow us to perform much
+larger simulations than \enzo.  The majority of the production simulations in
+the proposed work will be suitable for either code.  
+
+
+
+% From the cosmological simulation 
+% These simulations will be used as initial and boundary conditions 
+
+% \red{This will feed back to cosmological simulations as improved star
+% formationa nd feedback algorithms, etc.}
+
+% \red{need to elaborate upon this a bit before we dive into the
+%   simulation section: we'll do simulations (described in 3.1), compare
+% to specific observations (3.2), and will do this in a way that is
+% logically partitioned (3.3).}

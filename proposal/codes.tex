@@ -11,6 +11,15 @@
 % \label{sec:enzo}
 % \vspace{-1mm}
 
+For this work, we will be using the adaptive mesh refinement (AMR) code \enzo,
+and its exascale succcessor, \enzoe.
+The former is a well-established code for many computational astrophysics
+problems.  The latter is an AMR code that has been designed for extreme scalability on both CPU
+and GPU architectures, but shares the same physics packages as \enzo.  The use
+of both codes allows us to take advantage of the enormous performance gains of
+\enzoe\ while still ensuring success of the project.  As \enzoe\ development is
+completed it will supplant \enzo\ for our calculations.
+
 \noindent
 {\large \textbf{The \enzo\ code.}}
 The calculations described in this proposal will be performed using
@@ -19,7 +28,8 @@ mesh
 refinement code used for the simulation of cosmological and
 astrophysical phenomena
 
-\cite[][\url{http://enzo-project.org}]{2014ApJS..211...19B}.  \enzo\
+\enzo\
+\cite[][\url{http://enzo-project.org}]{2014ApJS..211...19B}.  
 uses a block-structured adaptive mesh refinement scheme 
 \cite{Berger89} to achieve high spatial and temporal resolution, and
 combines an N-body adaptive particle-mesh solver for dark matter
@@ -46,23 +56,46 @@ intergalactic and circumgalactic medium
 and the properties of star-forming molecular clouds
 \cite{Kritsuk11,Kritsuk11b,Collins11,Collins11b,Collins12,Schmidt13}.
 
-The \enzo\ code has been selected by the NSF to be part of the
-Petascale Computing Resource Allocation (PRAC) program under three
-separate allocations totaling approximately 300 million core-hours, and was one of
-the handful of codes that were first used on Blue Waters when it was
-first made available for science runs in early 2012.  Near-perfect
-scaling of the code in its unigrid (non-AMR) mode has  been
-demonstrated to more than 90,000 CPU cores.  Calculations using AMR do
-not scale as well, although reasonable performance at up to several
-thousand CPU cores can be expected for large, well-balanced, and
-physics-rich AMR runs.  Given that the simulations needed for this
-project are well below this scale, \enzo\ will easily handle the
-calculations that are necessary for the proposed work.
+%The \enzo\ code has been selected by the NSF to be part of the
+%Petascale Computing Resource Allocation (PRAC) program under three
+%separate allocations totaling approximately 300 million core-hours, and was one of
+%the handful of codes that were first used on Blue Waters when it was
+%first made available for science runs in early 2012.  Near-perfect
+%scaling of the code in its unigrid (non-AMR) mode has  been
+%demonstrated to more than 90,000 CPU cores.  Calculations using AMR do
+%not scale as well, although reasonable performance at up to several
+%thousand CPU cores can be expected for large, well-balanced, and
+%physics-rich AMR runs.  Given that the simulations needed for this
+%project are well below this scale, \enzo\ will easily handle the
+%calculations that are necessary for the proposed work.
 
 % \vspace{-3mm}
 % \subsection{\yt}
 % \label{sec:yt}
 % \vspace{-1mm}
+
+{\large \textbf{The \enzoe\ code.}}
+
+\red{forest of oct trees.  salable gravity.  physics from enzo.  kokos.  cpu and
+gpu.}
+
+\enzoe\ \citep{Bordner12, Bordner18} is the Exascale successor to \enzo. 
+It retains the physics solvers from \enzo\ (e.g. the PPM and MHD solvers,
+chemistry, thermodynamics, star formation, etc) but replaces the AMR framework
+with a highly scalable ``forest of oct-trees,'' which enables scaling AMR to
+hundreds of thousands of cores. \citet{Bordner18} show \enzoe\ (branded Enzo-P
+in that publication) scaling to 265,000 processors.  This kind of scaling is not
+available to \enzo, but will be necessary for the future growth of computational
+astrophysics.
+
+\enzoe\ is currently under development under an NSF CSSI grant (\#OAC 1835426)  lead by the
+collaborator, Dr. O'Shea.  At present the majority of physics solvers are
+present and functioning in \enzoe.  The only outstanding piece of code
+to be ported from \enzo\ to \enzoe\ is the \emph{flux correction} routines.
+These routines ensure conservation across refinement jumps and are necessary for
+accurately conserving mass and magnetic flux.  The PI and collaborator have ample experience with
+these algorithms and foresee little difficulty in completing this development in
+the first year.
 
 \vspace{2mm}
 \noindent

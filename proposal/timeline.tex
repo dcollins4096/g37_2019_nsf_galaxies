@@ -1,104 +1,133 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-4mm}
-\section{Collaboration management plan and timeline}
+\section{Management plan and timeline}
 \label{sec:timeline}
 \vspace{-3mm}
 
 \textbf{The Team.}  
-Dr. Brian O'Shea (PI) is an expert in cosmological simulations of
-structure formation, and has modeled galaxy evolution from the
-earliest galaxies through present-day galaxy clusters.  He is an
-expert on the sub-grid modeling of astrophysical processes in the
-\enzo\ code, and is wholly or partially resonsible for several of
-\enzo's most critical modules for this project, including the star
-formation and feedback and AGN feedback algorithms.  In this work,
-Dr. O'Shea and his research group at Michigan State University will be
-responsible for the cosmological simulations of galaxy formation, and
-will lead the design and analysis of idealized Milky Way and dwarf
-galaxy simulations.
 
 Dr. David Collins (Co-PI) is an expert in numerical MHD methods and
 simulations of star forming clouds, and has participated in
 simulations of MHD turbulence in a variety of contexts, including
-first stars, and galaxy clusters.  He was primarily responsible for
+first stars and galaxy clusters.  He was primarily responsible for
 the development of the MHD solver that will be used for this work.  In
-the proposed work, Dr. Collins and his research group at Florida State
-University will be responsible for simulations at the galaxy scale and
-below, focusing on the formation and collapse of molecular clouds, and
-the strength and topology of the galactic magnetic field.  They will
-also be responsible for the development of the new MHD-based star
-formation and feedback algorithm, and will lead the design and
-analysis of idealized disk galaxy and ISM/molecular cloud simulations.
+the proposed work, Dr. Collins will be responsible for directing the activity,
+analysis of simulation products, and code development as necessary.
 
-Dr. Sui Ann Mao (external collaborator; group leader at the Max Planck
-Institute for Radio Astronomy in Bonn, Germany; see attached letter of
-collaboration) is an expert in the
-measurement of magnetic field structure in the Milky Way, the Large
-Magellanic Cloud, 
-Local Volume galaxies,
-and in more distant galaxies. She will offer
-guidance regarding synthetic observations of simulations at all
-scales, suggest additional measurements beyond those described in this
-proposal, and will verify that the behavior of simulated fields in the
-simulations described in this proposal are consistent with current
-observations.  Our work will also inform her observational campaign by
-predicting observational quantities.
+
+%University will be responsible for simulations at the galaxy scale and
+%below, focusing on the formation and collapse of molecular clouds, and
+%the strength and topology of the galactic magnetic field.  They will
+%also be responsible for the development of the new MHD-based star
+%formation and feedback algorithm, and will lead the design and
+%analysis of idealized disk galaxy and ISM/molecular cloud simulations.
+
+Dr. Brian O'Shea (external collaborator, Michigan State University) is an expert in cosmological simulations of
+structure formation, and has modeled galaxy evolution from the
+earliest galaxies through present-day galaxy clusters.  He is an
+expert on the sub-grid modeling of astrophysical processes in the
+\enzo\ code, and is wholly or partially responsible for several of
+\enzo's most critical modules for this project, including the star
+formation and feedback and AGN feedback algorithms.  In this work,
+Dr. O'Shea and his research group at Michigan State University will be
+responsible for the remaining \enzoe\ developments and interpretation of scientific results.
+
+The proposal will also include one graduate student at FSU.  This student will
+be responsible for performance of both cosmological and isolated galaxy
+simulations and analysis of results.
 
 \vspace{2mm}
 \noindent
 \textbf{Plan and Timeline.}
-PI O'Shea (MSU) and co-PI Collins (FSU) jointly have responsiblity for
-carrying out the research described in this proposal and for reporting
-progress and results to the NSF.  They individually are responsible
-for overseeing the grant budget and for mentoring the graduate student
-at MSU (O'Shea) and the postdoctoral researcher at FSU (Collins).
 
-At the scientific and technical level, Dr. O'Shea and the MSU graduate
-student are responsible for designing, running, and analyzing the
-cosmological galaxy formation simulations and, in collaboration with
-Dr. Mao, comparing the simulations to extragalactic observations of
-magnetic fields.  The MSU and FSU contingents will work together to
-extract initial conditions for the galaxy-level simulations from
-cosmological calculations, and the FSU group will focus on the
-study of magnetic field evolution in isolated galaxy simulations under
-a variety of circumstances and on the formation of molecular
-cloud-based star formation and feedback algorithms.  Both the FSU and
-MSU research groups, as well as Dr. Mao, will work together to further
-develop the synthetic observing capabilities in \yt\ as they pertain
-to magnetic field observations, and on comparing simulations with
-observations at all physical scales.
+PI Collins will be responsible for
+carrying out the research described in this proposal and for reporting
+progress and results to the NSF, and will be responsible
+for overseeing the grant budget and for mentoring the graduate student.
+
+Dr. O'Shea and the team at MSU are responsible for the final development needs
+of \enzoe, and will aid in the interpretation and analysis of results.
 
 The timetable and milestones for this project are listed below.  We
 assume for planning purposes that the work done as a part of this
-project will start in August 2018.
+project will start in August 2020.
 
-\vspace{-2mm}
+This project runs the risk of being overly ambitious.  New code development 
+brings uncertainties, and there are many interesting questions to be asked of
+the resulting simulations.  Here we describe a minimal and conservative work
+plan to ensure success of the primary measurements.  To hedge against code
+errors and development setbacks, the initial phases will be run with both Enzo
+and \enzoe.  This will result in some additional cost as the number of
+simulations and their setup will increase, but the redundancy will ensure some
+successful results while verifying results from the new code.  Once development
+is finished, efforts will focus on \enzoe\ exclusively.  In the unlikely event
+of severe delays, Enzo will be used for the larger simulations. 
 
+The basic sequence of simulations for our research plan is as follows:
+\begin{enumerate}
+    %\item Get the magnetic feedback working with CT (maybe ignore that)
+    \item Perform a galaxy formation simulation at cosmological scales
+    \item Extract galactic properties from a target galaxy
+    \item Simulate isolated galaxy
+    \item Produce synthetic polarization and synchrotron maps
+\end{enumerate}
+Each of these actions uses machinery that has been well tested in \enzo\ and
+\yt.  
+Using \enzo\ and simple physics (e.g. no MHD or supernovae), these actions can be done by an
+inexperienced graduate student in 
+6 months to one year.   Using scientifically interesting resolution increases
+the simulation and analysis time substantially, as well as the time to solve problems that may
+arise.  Similarly, including scientifically interesting physics destabilizes the code
+and requires more time of both the computer and the student.  
+
+The time to
+perform this sequence of simulations with \enzoe\ is not as well determined, as
+many of the tools that make these simulations easy with \enzo\ do not exist for
+\enzoe.  However in principle they should have comparable time scales.
+The development of \enzoe\ is proceeding concurrently at MSU, and
+should be done some time \red{(maybe don't over sell this)}. 
+We thus anticipate the new graduate student can perform the full suite of
+high-resolution simulations in the first two years.  In the third year, we will
+then perform the \red{measurements outlined in section whatever.}
+
+We will spend the \emph{first} year running a low-resolution version of this sequence
+for code development and training purposes.  The \emph{second} year we will begin the
+simulations at the target resolution with \enzoe, as well as analyzing the
+magnetic history and synthetic maps.  The \emph{third} year we will further explore
+variations in mass, by exploring other galaxies in the Tempest simulations.
+
+Conservatively, we will structure our work in the following way:
+%\vspace{-2mm}
 \begin{itemize}
-\item{\textbf{Year 1} (2018-19): The postdoc will implement the feedback in the
-CT solver.  In parallel, the run first round of cosmological MHD
-zoom-in simulations of all galaxies will be run with the existing feedback.  Extract initial conditions for
-first isolated galaxy calculations.  Begin data analysis of
-cosmological simulations.  Run first isolated galaxy simulations.  
-{\em Milestones}: Complete first round of cosmological simulations.  }
+\item{\textbf{Year 1} (2020-2021): 
+    During the first year, the graduate student performs the full sequence of simulations and analysis
+    at low resolution, with limited physics, using \enzo.  We will select one of the Tempest
+    galaxies to re-simulate with simple MHD at low resolution, extract the
+    galactic structure at $z=0$, re-simulate the galaxy at low resolution, and
+    produce synthetic dust polarization maps.  Analyze magnetic field history of
+    target galaxy.  We will also begin \enzoe\ on the cosmology simulations as
+    the code becomes available.  By the end of the first year we will have the
+    complete analysis package for a single low-resolution galaxy.  
 
-\item{\textbf{Year 2} (2019-20): Finish data analysis of first round
-of cosmological simulations.  Run first round of isolated galaxy
-calculations, informing improved subgrid star formation and feedback
-models.  Run and analyze zoom-in cosmological simulations with physics
-variations.  Analyze molecular cloud simulations and create improved
-subgrid stellar feedback model.  {\em Milestones}: Completed data
-analysis for first set of cosmological simulations and first round of
-isolated galaxy simulations.  Creat subgrid stellar feedback model
-with MHD.  }
+{\em Milestones}: Produce low resolution versions of both cosmology and galaxy
+simulations with \enzo.  Analyze magnetic history and synthetic polarization maps.  Begin using \enzoe.}
 
-\item{\textbf{Year 3} (2020-21): Run and analyze final round of
-zoom-in cosmological simulations and isolated galaxy simulations,
-using new subgrid MHD stellar feedback model.   {\em
-Milestones}: Completed final round of cosmological simulations and
-isolated galaxy simulations (including data analysis). }
+\item{\textbf{Year 2} (2021-2022): 
+    Begin a moderate- and high-resolution sequence of simulations with the same target galaxy
+    as Year 1, and all three magnetic field prescriptions.  This will be done
+    with \enzo, and concurrently with \enzoe\ if the code is ready.  
 
-\item{\textbf{End of grant}: Public release of all new \enzo\ modules,
+{\em Milestones}: 
+Science-ready simulations with three magnetic prescriptions. Publication of the
+magnetic history of the galaxy and synthetic polarization and synchrotron maps.
+}
+
+\item{\textbf{Year 3} (2022-2023): 
+    During year three we will perform the rest of the analysis described in 
+    Section \red{whatever.} 
+    }
+
+\item{\textbf{End of grant}: Public release of all new \enzo\ and \enzoe\ modules,
 as well as all \yt\ synthetic observation tools and example scripts.
 Public release of all simulation data and data products.}
 

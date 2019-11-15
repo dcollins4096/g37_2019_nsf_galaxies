@@ -1,0 +1,118 @@
+\vspace{-6mm}
+\section{Objectives and Summary}
+\label{sec:objectives}
+\vspace{-3mm}
+
+It has been argued, somewhat facetiously, that there is only one magnetic field
+line in the universe; ultimately all magnetic environments are connected.
+Stellar magnetic fields are intimately tied to their local
+interstellar medium (ISM) by winds and supernovae; the field in the ISM is
+produced and sustained by the galactic
+rotation and turbulence;  the circumgalactic medium (CGM) provides the boundary
+conditions for the large scale dynamo, impacting the field in the ISM and
+delivering magnetic field to the intergalactic medium (IGM).  
+In the proposed
+work we will use a combination of cosmological and galactic scale simulations to
+probe the following questions:
+\begin{enumerate}
+    \item How and when was the magnetic field of the Galaxy assembled?
+    \item Where is the field distributed in space, and what is its impact on
+    observable quantities?  
+    %This entails the location of the gas within the galaxy,
+    %and the correlation of the field with itself (structured vs. unstructured field)
+    \item How do magnetic fields at different spatial scales affect each other?  Put
+    simply, what is the smallest domain one must simulate to accurately capture the
+    behavior of a portion of the ISM?
+\end{enumerate}
+While these questions pertain to galaxies of all sizes, in this work we will will
+focus on Milky Way sized $(L^*)$ galaxies and the impact on observable quantities.
+
+%and here the field will interact with the
+%intergalactic medium of the Local Group. 
+We will use two suites of simulations on different time- and size-scales:
+one \emph{cosmological}
+spanning \red{SIZE} 
+capture the formation of a Milky Way-sized galaxy cosmological time- and size-scales; and one suite of \emph{isolated galaxy} 
+simulations at \red{SIZE}
+that will will simulate the same galaxy with the resolution necessary to capture the turbulence that is
+crucial for the dynamics of the ISM.  The cosmological simulations will be used
+for the initial and boundary conditions of the isolated galaxy simulations.
+Simulations will vary the initial mean magnetic field and the amount of field
+ejected from supernovae.
+%These
+%simulations will contain a rich array of galaxies through cosmic time.  Focus will be
+%placed on observable magnetic properties of Milky Way sized galaxies at low
+%redshift, in particular synchrotron emission and polarized dust emission in the
+%interstellar medium (ISM), which are both caused by structures in the magnetic
+%field.  
+
+%Extragalactic and high-redshift observations will be
+%used to validate the simulations.
+%Secondary questions involving variation in mass and redshift
+%will also be explored as 
+
+Simulations will be performed with the open-source code Enzo
+\citep{Collins10,2014ApJS..211...19B} which has a long history of
+cosmological and galactic MHD simulations.   These simulations will also serve as a development vehicle for 
+\enzoe, the exascale successor to Enzo.  \enzoe, which is under development and
+nearly completed, will allow simulations to be performed at a processor count
+that is not possible for the current Enzo, 
+enabling the dynamic range and resolution necessary to capture the
+magnetic field evolutions.
+
+We will monitor three quantities in our simulations; the mechanism for field
+growth, the time scale for growth, and the spatial distribution and correlations
+of the magnetic field within and around the galaxy.   
+
+We will also produce
+synthetic synchrotron and radio emission as well as polarized dust.    The
+primary areas of study will be the foregrounds for the polarized CMB, and the
+role of magnetic fields in star forming clouds.
+%These will
+%be compared to observations to ensure the validity of our simulations, and to
+%study the impact of magnetic fields in the ISM in two areas
+%The primary measurement will be an analysis of the relative importance of
+%several magnetic field production mechanisms; primordial fields frozen in to the
+%flow, stellar feedback, and small- and large-scale dynamo.  
+
+
+We hypothesize that feedback of magnetic fields from
+stellar explosions, and subsequent dynamo activity, is responsible for
+magnetizing the universe.  We will address these questions within this
+framework by:
+\vspace{-2mm}
+\begin{enumerate}
+
+\item Performing a suite of galaxy formation simulations from cosmological
+initial conditions, using a set of three subgrid models for magnetic field
+creation
+\item Re-simulate a selection of galaxies at sub-parsec resolution to connect the
+magnetic fields to the initial and boundary conditions of their birth.
+\item Compare synthetic observations of galaxies at each stage to observed radio
+and infrared observations.  With these synthetic observations we will address
+our hypothesis, and provide predictions for future observations.
+
+\end{enumerate}
+\vspace{-2mm}
+
+Observations show that galaxies at $z
+\simeq 2$ (one-third of the present age of the universe) have magnetic
+fields that are both organized on large scales and of comparable
+magnitude to what we see in the Milky Way today.  Organized, dynamically important magnetic fields are also
+ubiquitous in the interstellar medium of present-day galaxies.  The
+molecular clouds that are the sites of star formation in nearby
+galaxies form out of this magnetized plasma, and measurements show
+that these clouds have substantial magnetic fields as well.  These
+magnetic fields are possibly quite important for star formation, which
+remains one of the most important unsolved problems in astrophysics.
+While magnetic fields have been observed in all of these astrophysical
+regimes, and there is a clear sequence of events -- galaxies form
+molecular clouds, which in turn are the sites of star formation -- the
+ways in which magnetic fields tie galaxies to molecular clouds, and
+thus potentially affect star formation and the initial stellar mass
+function, are poorly understood theoretically.  
+There is a
+clear need for a detailed, self-consistent model of cosmological
+structure formation that can trace the evolution of magnetized gas to
+the physical scales relevant for star formation.
+
