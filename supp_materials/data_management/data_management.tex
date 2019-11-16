@@ -41,7 +41,8 @@
 
 \titleformat*{\section}{\large\bfseries}
 \hypersetup{urlcolor=blue}
-
+\def\enzo{Enzo}
+\def\enzoe{Enzo-E}
 \begin{document}
 
 % NOTE: this document addresses
@@ -60,9 +61,8 @@ The research described in this proposal will result in several types
 of data.  The bulk of the data produced will be raw and processed
 simulation data (typically in time series), with the latter including
 individual fields extracted from the simulations, halo catalogs and
-merger trees, and a variety of analysis products including radial
-profiles of a variety of quantities of interest, images (including
-mock observational images), and mock galaxy spectra.  Additional types
+merger trees, and synthetic observations.
+Additional types
 of data produced will include scientific software and a website
 describing the data products and software.  This data will be stored
 exclusively in digital formats.
@@ -76,14 +76,14 @@ data product:
 
 \vspace{2mm}
 \noindent \textbf{Raw simulation data} will be stored in large binary
-files using the HDF5 data format (\url{www.hdfgroup.org/HDF5}).  This
+files using the HDF5 data format.  This
 is a commonly used scientific data format that has strong community
 support.  The structure of the simulation datasets can be somewhat
 complex, but is explained by in-file metadata and an accompanying text
-(soon to be binary HDF5) file that describes important information
+ file that describes important information
 about the grid patches.  These data outputs can be read by a variety
 of publicly available, open source tools such as the YT data analysis
-tool (\url{http://yt-project.org}), as well as the widely used Paraview and
+tool, as well as the widely used Paraview and
 VisIt visualization tools.  If necessary, the YT tool can be used as
 an intermediary to produce files that are more easily accessible to
 other researchers.
@@ -91,24 +91,20 @@ other researchers.
 \vspace{2mm}
 \noindent \textbf{Processed simulation data}, including most analysis
 products, will be stored in binary HDF5 files with easily
-understandable file structures.  Halo catalogs and merger trees will
-be stored in either HDF5 files or (for smaller catalogs/trees) in
-ASCII tables.  Images resulting from data processing will be stored in
+understandable file structures.  Images resulting from data processing will be stored in
 standard file formats such as jpeg, tiff, or png, and any mock
-observational data created (images and spectra) will be stored using
+observational data created will be stored using
 the FITS file format.  All files, when appropriate, will have
-accompanying metadata (including in FITS by default, and in HDF5 files
-with little effort) to explain the contents of the file, including the
+accompanying metadata  to explain the contents of the file, including the
 nature of it, units, and related information.  All processed data and
 analysis outputs will be created by a suite of publicly available
 tools.
 
 \vspace{2mm}
-\noindent \textbf{Scientific software:} The Enzo code is already
-publicly available at \url{http://enzo-project.org}.  The PIs are
-authors of this code, and any additions made to Enzo as a part of this
-project will be included as source code in one of the Enzo public
-releases.  Code will include explanatory comments.
+\noindent \textbf{Scientific software:} Both \enzo\ and \enzoe\ are
+publicly available.
+Any additions made to either code as a part of this
+project will be contributed back to the relevant projects.
 
 \vspace{2mm}
 \noindent \textbf{Website:} The website associated with this project
@@ -119,11 +115,10 @@ will be ASCII plaintext using html, php, javascript, and so on.
 \vspace{-3mm}
 
 \noindent\textbf{Simulation data} will be of sufficient size (hundreds
-of terabytes to a few petabytes) that it will be difficult to make
+of terabytes) that it will be difficult to make
 this available via a website, and wildly impractical to download via
 http.  As such, we will make it available to other scientists through
-the nascent National Data Service (NDS;
-\url{http://www.nationaldataservice.org/}) and hosted by archives at
+the National Data Service  and hosted by archives at
 the national supercomputing centers (see part 5 of this document,
 below) with no restrictions on its use.  Instructions on its access
 will be given via the project website, and also in README files in the
@@ -135,21 +130,20 @@ upon acceptance of the relevant peer-reviewed papers.
 also be of large size (hundreds of gigabytes to terabytes), and it
 will be impractical to make it all available via a website.  The most
 bulky data will be made available via the National Data Service (see
-directly above, and Part 5), and other products (images, mock
-observations, merger trees, halo catalogs, and so on) will be made
-available via an MSU website.  This website will allow users to
+directly above, and Part 5), and other products  will be made
+available via a website.  This website will allow users to
 download and use the data with no restrictions on its use.  This will
 be done by the end of the grant period, although if possible we will
 make data available upon acceptance of the relevant peer-reviewed
 papers.
 
-\noindent\textbf{Source code} will be contributed back to the Enzo or YT software
+\noindent\textbf{Source code} will be contributed back to the \enzo\  or YT software
 projects (as appropriate) by the completion of the grant period (and,
 more likely, by the acceptance of the peer-reviewed papers using the
 relevant source code).  This software will then be available without
 restriction to any user who wishes to download, use, or modify it.
 
-\noindent\textbf{Website} will be available on the Internet.  All materials,
+\noindent The \textbf{website} will be available on the Internet.  All materials,
 including movies, images, and text, will be licensed for re-use with
 appropriate credit given using a license such as the GNU Copyleft
 license.
@@ -194,20 +188,10 @@ likely significantly longer).  However, data archiving in perpetuity
 cannot be guaranteed at present, due to the impermanent nature of the
 data tapes used for storage.
 
-Source code will be uploaded to Google Code, BitBucket, and other
-Cloud-based data providers.  While it is unclear what the future holds
+Source code will be stored on github primarily.  While it is unclear what the future holds
 for any individual provider, it seems likely that the Enzo and YT
 projects will continue long into the future, and this source code will
 propagate, along with these projects, to whatever Internet home the
 projects find in the future.
-
-Websites relating to this project, and all of the data on said
-websites, will be hosted by Michigan State University’s Information
-Technology group on servers that are backed up regularly.  This data
-will be available to the public for as long as Dr. O’Shea is a faculty
-member at MSU.  If Dr. O’Shea leaves MSU for any reason, steps will be
-taken to ensure that this data remains available, either by moving it
-to another university or making it a part of a larger, more persistent
-project at MSU.  
 
 \end{document}
