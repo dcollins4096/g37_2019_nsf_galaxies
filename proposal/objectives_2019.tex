@@ -15,14 +15,14 @@ In the proposed
 work we will use a combination of cosmological and galactic scale simulations to
 probe the following questions:
 \begin{enumerate}
-    \item How and when was the magnetic field of the Galaxy assembled?
-    \item Where is the field distributed in space, and what is its impact on
-    observable quantities?  
+    \item How and When was the magnetic field of the Galaxy assembled?
+    \item Where is the field distributed within the galaxy, and how does the
+        assembly, history, and environment affect the distribution and tangling
+        of the magnetic field?
     %This entails the location of the gas within the galaxy,
     %and the correlation of the field with itself (structured vs. unstructured field)
-    \item How do magnetic fields at different spatial scales affect each other?  Put
-    simply, what is the smallest domain one must simulate to accurately capture the
-    behavior of a portion of the ISM?
+    \item What are the observational consequences of this magnetic field
+        distribution? 
 \end{enumerate}
 While these questions pertain to galaxies of all sizes, in this work we will will
 focus on Milky Way sized $(L^*)$ galaxies and the impact on observable quantities.
@@ -31,9 +31,9 @@ focus on Milky Way sized $(L^*)$ galaxies and the impact on observable quantitie
 %intergalactic medium of the Local Group. 
 We will use two suites of simulations on different time- and size-scales:
 one \emph{cosmological}
-spanning \red{SIZE} 
+spanning 25 Mpc to
 capture the formation of a Milky Way-sized galaxy cosmological time- and size-scales; and one suite of \emph{isolated galaxy} 
-simulations at \red{SIZE}
+simulations at 100 kpc
 that will will simulate the same galaxy with the resolution necessary to capture the turbulence that is
 crucial for the dynamics of the ISM.  The cosmological simulations will be used
 for the initial and boundary conditions of the isolated galaxy simulations.
@@ -54,19 +54,20 @@ ejected from supernovae.
 Simulations will be performed with the open-source code Enzo
 \citep{Collins10,2014ApJS..211...19B} which has a long history of
 cosmological and galactic MHD simulations.   These simulations will also serve as a development vehicle for 
-\enzoe, the exascale successor to Enzo.  \enzoe, which is under development and
+\enzoe, the exascale successor to Enzo \citep{Bordner12,Bordner18}.  \enzoe, which is under development and
 nearly completed, will allow simulations to be performed at a processor count
 that is not possible for the current Enzo, 
 enabling the dynamic range and resolution necessary to capture the
-magnetic field evolutions.
+magnetic field evolutions.  
 
 We will monitor three quantities in our simulations; the mechanism for field
 growth, the time scale for growth, and the spatial distribution and correlations
 of the magnetic field within and around the galaxy.   
 
-We will also produce
-synthetic synchrotron and radio emission as well as polarized dust.    The
-primary areas of study will be the foregrounds for the polarized CMB, and the
+We will also produce several synthetic observations, most notably
+synthetic polarized synchrotron and dust emission.
+The primary areas of study will be the foregrounds for the polarized cosmic
+microwave background (CMB), and the
 role of magnetic fields in star forming clouds.
 %These will
 %be compared to observations to ensure the validity of our simulations, and to
@@ -75,21 +76,18 @@ role of magnetic fields in star forming clouds.
 %several magnetic field production mechanisms; primordial fields frozen in to the
 %flow, stellar feedback, and small- and large-scale dynamo.  
 
-
 We hypothesize that feedback of magnetic fields from
 stellar explosions, and subsequent dynamo activity, is responsible for
 magnetizing the universe.  We will address these questions within this
 framework by:
-\vspace{-2mm}
 \begin{enumerate}
-
 \item Performing a suite of galaxy formation simulations from cosmological
 initial conditions, using a set of three subgrid models for magnetic field
 creation
 \item Re-simulate a selection of galaxies at sub-parsec resolution to connect the
 magnetic fields to the initial and boundary conditions of their birth.
-\item Compare synthetic observations of galaxies at each stage to observed radio
-and infrared observations.  With these synthetic observations we will address
+\item Compare synthetic observations of galaxies at each stage to 
+synthetic observations.  With these synthetic observations we will address
 our hypothesis, and provide predictions for future observations.
 
 \end{enumerate}

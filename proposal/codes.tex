@@ -76,8 +76,8 @@ and the properties of star-forming molecular clouds
 
 {\large \textbf{The \enzoe\ code.}}
 
-\red{forest of oct trees.  salable gravity.  physics from enzo.  kokos.  cpu and
-gpu.}
+%\red{forest of oct trees.  salable gravity.  physics from enzo.  kokos.  cpu and
+%gpu.}
 
 \enzoe\ \citep{Bordner12, Bordner18} is the Exascale successor to \enzo. 
 It retains the physics solvers from \enzo\ (e.g. the PPM and MHD solvers,
@@ -85,17 +85,19 @@ chemistry, thermodynamics, star formation, etc) but replaces the AMR framework
 with a highly scalable ``forest of oct-trees,'' which enables scaling AMR to
 hundreds of thousands of cores. \citet{Bordner18} show \enzoe\ (branded Enzo-P
 in that publication) scaling to 265,000 processors.  This kind of scaling is not
-available to \enzo, but will be necessary for the future growth of computational
+available to \enzo, and will be necessary for the future growth of computational
 astrophysics.
 
-\enzoe\ is currently under development under an NSF CSSI grant (\#OAC 1835426)  lead by the
-collaborator, Dr. O'Shea.  At present the majority of physics solvers are
+\enzoe\ is currently under development under two NSF grants, \#OAC 1835402 and
+\#OAC 1835426, the latter  by the
+collaborator, Dr. O'Shea.  At present the majority of physics solvers necessary
+for the proposed work are
 present and functioning in \enzoe.  The only outstanding piece of code
 to be ported from \enzo\ to \enzoe\ is the \emph{flux correction} routines.
 These routines ensure conservation across refinement jumps and are necessary for
 accurately conserving mass and magnetic flux.  The PI and collaborator have ample experience with
 these algorithms and foresee little difficulty in completing this development in
-the first year.
+the first year.  This work should be completed by June 2020.
 
 \vspace{2mm}
 \noindent

@@ -48,20 +48,24 @@ for overseeing the grant budget and for mentoring the graduate student.
 Dr. O'Shea and the team at MSU are responsible for the final development needs
 of \enzoe, and will aid in the interpretation and analysis of results.
 
+The proposal will provide support for one unnamed graduate student.  As the
+student has not been selected, we will structure the timeline assuming an
+inexperienced student.  
+
 The timetable and milestones for this project are listed below.  We
 assume for planning purposes that the work done as a part of this
 project will start in August 2020.
-
-This project runs the risk of being overly ambitious.  New code development 
-brings uncertainties, and there are many interesting questions to be asked of
-the resulting simulations.  Here we describe a minimal and conservative work
+This project runs the risk of being overly ambitious.  
+New code development 
+brings uncertainties, and there are more interesting questions to be asked of
+the resulting simulations than we can possibly ask with the personnel involved.  Here we describe a minimal and conservative work
 plan to ensure success of the primary measurements.  To hedge against code
 errors and development setbacks, the initial phases will be run with both Enzo
 and \enzoe.  This will result in some additional cost as the number of
-simulations and their setup will increase, but the redundancy will ensure some
+simulations and their setup will increase, but the redundancy will ensure a
 successful results while verifying results from the new code.  Once development
-is finished, efforts will focus on \enzoe\ exclusively.  In the unlikely event
-of severe delays, Enzo will be used for the larger simulations. 
+of \enzoe\ is finished, it will be used exclusively.  In the unlikely event
+of severe delays, Enzo will be used for the production simulations. 
 
 The basic sequence of simulations for our research plan is as follows:
 \begin{enumerate}
@@ -69,11 +73,12 @@ The basic sequence of simulations for our research plan is as follows:
     \item Perform a galaxy formation simulation at cosmological scales
     \item Extract galactic properties from a target galaxy
     \item Simulate isolated galaxy
-    \item Produce synthetic polarization and synchrotron maps
+    \item Produce synthetic observations
 \end{enumerate}
 Each of these actions uses machinery that has been well tested in \enzo\ and
 \yt.  
-Using \enzo\ and simple physics (e.g. no MHD or supernovae), these actions can be done by an
+Using \enzo\ and simple physics and low resolution (e.g. no MHD or supernovae
+and small enough to fit on a desktop), these actions can be done by an
 inexperienced graduate student in 
 6 months to one year.   Using scientifically interesting resolution increases
 the simulation and analysis time substantially, as well as the time to solve problems that may
@@ -85,10 +90,10 @@ perform this sequence of simulations with \enzoe\ is not as well determined, as
 many of the tools that make these simulations easy with \enzo\ do not exist for
 \enzoe.  However in principle they should have comparable time scales.
 The development of \enzoe\ is proceeding concurrently at MSU, and
-should be done some time \red{(maybe don't over sell this)}. 
-We thus anticipate the new graduate student can perform the full suite of
-high-resolution simulations in the first two years.  In the third year, we will
-then perform the \red{measurements outlined in section whatever.}
+should be completed June 2020.
+%We thus anticipate the new graduate student can perform the full suite of
+%high-resolution simulations in the first two years.  In the third year, we will
+%produce the final synthetic CMB maps and other synthetic observations.
 
 We will spend the \emph{first} year running a low-resolution version of this sequence
 for code development and training purposes.  The \emph{second} year we will begin the
@@ -104,7 +109,7 @@ Conservatively, we will structure our work in the following way:
     at low resolution, with limited physics, using \enzo.  We will select one of the Tempest
     galaxies to re-simulate with simple MHD at low resolution, extract the
     galactic structure at $z=0$, re-simulate the galaxy at low resolution, and
-    produce synthetic dust polarization maps.  Analyze magnetic field history of
+    produce synthetic dust polarization maps.  We will analyze magnetic field history of
     target galaxy.  We will also begin \enzoe\ on the cosmology simulations as
     the code becomes available.  By the end of the first year we will have the
     complete analysis package for a single low-resolution galaxy.  
@@ -113,18 +118,24 @@ Conservatively, we will structure our work in the following way:
 simulations with \enzo.  Analyze magnetic history and synthetic polarization maps.  Begin using \enzoe.}
 
 \item{\textbf{Year 2} (2021-2022): 
-    Begin a moderate- and high-resolution sequence of simulations with the same target galaxy
+    Begin a high-resolution sequence of simulations with the same target galaxy
     as Year 1, and all three magnetic field prescriptions.  This will be done
-    with \enzo, and concurrently with \enzoe\ if the code is ready.  
+    with a combination of \enzo\ and \enzoe\ depending on the readiness of the
+    latter. The high-resolution cosmology simulations will finish and we can
+    analyze and publish the cosmological portion of the assembly.
 
 {\em Milestones}: 
-Science-ready simulations with three magnetic prescriptions. Publication of the
-magnetic history of the galaxy and synthetic polarization and synchrotron maps.
+Science-ready simulations with three magnetic prescriptions will be performed. Publication of the
+magnetic history of the galaxy over cosmic time.  Begin the high-resolution
+isolated galaxy runs.
 }
 
 \item{\textbf{Year 3} (2022-2023): 
-    During year three we will perform the rest of the analysis described in 
-    Section \red{whatever.} 
+    During the final year we will finish the galactic simulations and work on publication of the synthetic
+    observations. We will study the magnetic assembly of the isolated galaxy,
+    and compare to that of the cosmological simulations.
+
+{\em Milestones}: Finish and publish galactic simulations.  Release of synthetic observations.  
     }
 
 \item{\textbf{End of grant}: Public release of all new \enzo\ and \enzoe\ modules,

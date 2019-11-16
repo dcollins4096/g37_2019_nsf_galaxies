@@ -1,6 +1,40 @@
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=0.99\textwidth]{EHR.png}
+\end{center}
+\vspace{-6mm}
+\caption{\label{fig:ehr} 
+Two simulations using the \emph{Tempest} suite of simulations
+\citep{Hummels19}. The figure on the right has had enhanced halo resolution
+(EHR) which causes striking differences in the morphology of the gas around the galaxy.
+This will impact the evolution and structures of the magnetic field in the
+galaxy by altering the ability of the galaxy to expel flux.
+%Coherent magnetic structure is seen in
+%many disk galaxies. (\emph{Left}) The magnetic field from
+%polarized $\lambda=3,6$ and 20 cm  radio emission (vectors) along with total
+%emission (contours) in M51. From  \cite{Fletcher11}.  Optical background from \emph{Hubble Space Telescope}
+%(image credit: NASA, ESA, S. Beckwith (STScI) and The Hubble Heritage Team
+%(STScI/AURA)).  This shows the well-ordered nature of the magnetic field along
+%the spiral arms. 
+%(\emph{Right}) The \emph{Planck} polarization map showing the 353 GHz dust
+%intensity convolved with the direction of polarization
+%\citep{PlanckIntermediateXIX15}.  This shows coherent structrue on a range of
+%scales throughtout the Milky Way.
+%(\emph{Right})  From \cite{Noutsos12}, the inferred magnetic
+%field direction in the Galaxy (green vectors) as compared to spiral arms (white
+%boxes).  Measurements from rotation measure from 622 pulsars, with field
+%direction towards the sun in blue, red away from the sun.  Clearly reversals in
+%the mean field are seen in the Galaxy, but not in M51
+}
+\vspace{-3mm}
+\end{figure}
 \subsection{Simulating the Magnetized Universe}
 \label{sec:simulations}
 \vspace{-1mm}
+
+Here we describe our target science simulations.  For training and development
+purposes, we will run low-resolution versions of the simulations described
+during the first year.  
 
 \subsubsection{Cosmological simulations}
 \label{sec:cosmo_sims}
@@ -22,7 +56,12 @@ Recently, the \emph{Tempest} collaboration of galaxy modelers
 large-volume cosmological simulations using the \enzo\ code -- one of
 a 25 Mpc volume, and the other 75 Mpc, both with $1024^3$ root grid
 cells and particles, and with multiple sets of physics in each set of
-calculations and moderate physical resolution ($\Delta \mathrm{x} \simeq 400$~pc).  Taken together, these sets of calculations resolve the
+calculations and moderate physical resolution ($\Delta \mathrm{x} \simeq
+400$~pc).  One such galaxy can be seen in Figure \ref{fig:ehr}
+\citep{Hummels19}.  This figure
+shows simulations of the same galaxy, but the panel on the right has enhanced
+halo resolution (EHR) which substantially alters the environment of the galaxy.
+Taken together, these sets of calculations resolve the
 formation of galaxies over three orders of magnitude in mass, from
 $\simeq 10^{10}$ to $10^{13}$~M$_\odot$. This encompasses galaxies
 ranging in size from the Small Magellenic Cloud through the largest
@@ -81,7 +120,8 @@ which allows us to experiment with variations in physical models to
 understand the effect that model choice may have on our results.
 Specifically, we will experiment with
 the three magnetic field injection scenarios described the introduction to this
-section.  \red{make sure this branding is consistent}
+section.  
+%\red{make sure this branding is consistent}
 
 In addition to probing the questions posed in Sections
 \ref{sec:objectives} and comparing to the observations described
